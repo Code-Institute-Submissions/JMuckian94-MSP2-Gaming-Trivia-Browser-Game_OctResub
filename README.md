@@ -3,13 +3,19 @@
 ![Device Mockups]()
 
 ## Project Objective
+To create a browser based trivia game that challanges the users knowledge of video games, keeps record of the score, and is responsive on all media viewport widths. This game should be attractive to look at, easy to navigate, simple to control, and of course fun to play. The browser game will be built using HTML, CSS, and Javascript code. This project will also make use of the opentdb.com API and Bootstrap framework.
 
 ## Table of Contents
 
 ## UX
 
 ### Website Design Goals
-
+- An attractive landing page that invites the user to take interest in the game
+- A color palette that is easy on the eyes if the user is playing for extented periods
+- The game area being easy to view the questions, submit answers, and to generally navigate
+- An end of game section which tallies the score and provides words of congratulations or encouragement
+- A website that works seamlessly on mobile, tablet and desktop devices
+- Social media links for if the user wishes to share with friends
 
 ### User Stories
 
