@@ -1,3 +1,121 @@
+# Gaming Trivia
+
+# Allstar Gyms
+
+![Device Mockups]()
+
+## Project Objective
+
+Welcome to Allstar Gym's new webpage! Allstar are a new gym francise who have set up in the Dublin City area. They required a new website that targets customers with attractive design and vivid imagery. 
+
+The website design I have chosen is clear and concise, and provides sufficient information to satisfy the curiousity of prospective members. This information can be easily obtained due to the intuitive layout of the page. It utilises striking colors and appealing imagery to catch the users attention. This README will tell the design story and give insite into how it all came together. 
+
+## Table of Contents
+
+## UX
+
+### Website Design Goals
+
+
+### User Stories
+
+- As a user, 
+- As a user, 
+- As a user, 
+- As a user, 
+- As a user, 
+- As a user, 
+- As a user, 
+- As a user, 
+- As a user, 
+
+### Site Owner Goals
+
+### User Requirements and Expectations
+
+#### Requirements
+
+#### Expectations
+
+### Design Choices
+
+#### Fonts
+
+#### Icons
+
+#### Colors
+
+#### Structure
+
+## Wireframes
+
+Here are the links to my wireframes:
+
+### [Desktop Wireframe]()
+
+### [Tablet Wireframe]()
+
+### [Mobile Wireframe]()
+
+## Features
+
+### Navigation
+
+## Features to be Implemented
+
+## Technologies Used
+
+### Languages
+
+- HTML
+- CSS
+- Javascript
+
+### Framworks & External Liberaries
+
+- [Bootstrap 4.6.0](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Unsplash](https://unsplash.com/)
+- [Stockvault](https://www.stockvault.net/)
+
+### Tools
+
+- [Git](https://github.com/)
+- [Gitpod](https://gitpod.io/workspaces)
+- [Balsamiq](https://balsamiq.com/)
+- [W3C HTML & CSS Validation Service](https://validator.w3.org/)
+
+## Testing of Interactive Elements (Use user stories, Story 1,2,3 etc)
+
+### Bugs
+
+## Deployment
+
+This project was deployed via GitHub by executing the following steps. After writing the code, committing and pushing it to GitHub:
+
+###### 1. Navigate to the repository on github and click Settings.
+###### 2. From there, go to the Source section within the Github Pages section.
+###### 3. Select master branch on the dropdown menu, and click save.
+###### 4. Now the website is live.
+
+Any time commits and pushes are sent to Github, the Github Pages site should update shortly after.
+
+### To run the project locally:
+
+###### 1. Click the green Clone or Download button on the Github Repository
+###### 2. Using the Clone with HTTPS option, copy the link displayed.
+###### 3. Open your IDE, and ensure the Git Terminal is open.
+###### 4. Change the working directory to the location where the cloned directory is to go.
+###### 5. Use the "git clone" command and paste the url copied in the second step.
+
+## Credits
+
+### Content / Media
+
+### Acknowledgements
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome USER_NAME,
