@@ -19,15 +19,15 @@ To create a browser based trivia game that challanges the users knowledge of vid
 
 ### User Stories
 
-- As a user, 
-- As a user, 
-- As a user, 
-- As a user, 
-- As a user, 
-- As a user, 
-- As a user, 
-- As a user, 
-- As a user, 
+- As a user, I want to be invited to play by an attractive and fun landing page
+- As a user, I want to click a button that starts the trivia game
+- As a user, I want the game to have 20 questions
+- As a user, I want the game to notify me if I have gotten the answer right or wrong
+- As a user, I want the game to keep tabs on how many questions have been asked and answered
+- As a user, I want a final tally of my score
+- As a user, I want to see some kind of leaderboard functionality
+- As a user, I want randomly selected questions to be pulled from a database to improve replayability
+- As a user, I want the user interface to be bug free and easy to navigate
 
 ### Site Owner Goals
 
