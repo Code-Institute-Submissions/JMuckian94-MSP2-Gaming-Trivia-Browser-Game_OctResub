@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-:root {
-    background-color: black;
-}
 
 * {
     box-sizing: border-box;
@@ -10,17 +7,25 @@
     border: 0;
     font-size: 62.5%;
     font-family: 'Roboto Mono', monospace;
+    background-color: black;
 }
 
 h1 {
     font-size: 5rem;
-    color: #fff;
-    margin-bottom: 4rem;
-
+    color: white;
+    margin: 3rem;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
 }
 
 h2 {
     font-size: 4rem;
-    color: #fff;
-    margin-bottom: 4rem;
+}
+
+#letsplay-btn {
+    font-size: 3rem;
+}
+
+#highscore-btn {
+    font-size: 3rem;
 }
