@@ -1,11 +1,21 @@
-var xhr = new XMLHttpRequest(); 
+const baseURL = "https://opentdb.com/api.php?amount=20&category=15";
 
-xhr.onreadystatechange = function() {
-    if(this.readyState == 4 && this.status == 200) {
-        document.getElementById('data').innerHTML = this.responseText;
-    }
-};
+function getData(cb) {
 
-xhr.open("GET", "https://opentdb.com/api.php?amount=20&category=15");
+    var xhr = new XMLHttpRequest();
 
-xhr.send;
+    xhr.open("GET", );
+    xhr.send();
+
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            cb(JSON.parse(this.responseText));
+        }
+    };
+}
+
+function writeToDocument(type) {
+    getData(type, function() {
+        document.getElementById('data').innerHTML = data;
+    });
+}
