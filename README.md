@@ -31,17 +31,37 @@ To create a browser based trivia game that challanges the users knowledge of vid
 
 ### Site Owner Goals
 
+- To create an engaging experience for players that will keep them playing again and again
+- To have a trivia game with a mix of easy to difficult questions
+
 ### User Requirements and Expectations
 
 #### Requirements
 
+- A landing page that explains what the website is and what is involved with the game
+- All the buttons and links on the page function properly
+- The website is easy to navigate
+- That the game doesn't display the same question twice
+- The game tallies my end score so I can see how I did
+
 #### Expectations
+
+- The questions are fun, challenging and diverse
+- The game gives me a variety of choices per question
+- The game gives me an indication whether I got the right or wrong answer
+- I can add my final score to a leaderboard
 
 ### Design Choices
 
+For overall design, I went will a classic arcade game look. The styling is minimalist and reminiscent of old video game backgrounds. I aim to make it appealing to classic and modern video game fans. I have opted for a dark background with all of the interactible elements being bright variants of red, green and blue.
+
 #### Fonts
 
+I went with Roboto Mono and monospace for my font as it has a classic video game program look to it. I also think it looks attractive as a white text on dark background. Since the website isn't very text heavy I feel the spaced out characters have a good appearance. It also adds extra emphasis to special characters and similar character types, adding extra edges, dashes or curves to maximise readability. I acquired this font on [Google Fonts](https://fonts.google.com/specimen/Roboto+Mono?query=roboto+mo#glyphs).
+
 #### Icons
+
+I used the free icons available on [Font Awesome](https://fontawesome.com/icons?d=gallery&p=2) to enhance and draw attention to certain sections of the page. The appropriate icons coincide with the topic being discussed in the text, such as using a gamepad and star icon for the 'Lets Play!' and 'Highscores' buttons on the landing page. Soical media icons are used instead of urls for asthetic enhancement. These icons are also styled alongside all other elements of the page so they blend seemlessly without sticking out.
 
 #### Colors
 
@@ -76,8 +96,7 @@ Here are the links to my wireframes:
 - [Bootstrap 4.6.0](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 - [Font Awesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
-- [Unsplash](https://unsplash.com/)
-- [Stockvault](https://www.stockvault.net/)
+- [Open Trivia Database](https://opentdb.com/)
 
 ### Tools
 
