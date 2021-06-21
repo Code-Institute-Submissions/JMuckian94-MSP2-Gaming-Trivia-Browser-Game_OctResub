@@ -65,7 +65,15 @@ I used the free icons available on [Font Awesome](https://fontawesome.com/icons?
 
 #### Colors
 
-[Trivia Game Color Pallete]()
+For colors I went for high contrast colors that provide the user clear signals as to how the game is progressing. I will elaborate on what colors are to be used where below.
+
+[Trivia Game Color Pallete](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/blob/master/wireframes/Gaming%20Trivia%20Color%20Pallete.png)
+
+- #111111 Rich Black: This charcoal color will be used for the background, allowing all visual elements to pop out
+- #4381C1 Steel Blue: This will be used as a highlight and background color for certain elements on the page
+- #71B340 Green RYB: This will be used to signal when the user has answered correctly
+- #DB222A Amaranth Red: This will be used to signal when the user has answered incorrectly
+- #FFFFFF White: This will be used for all text elements on the page
 
 #### Structure
 
@@ -75,11 +83,11 @@ For adaptive structure on all screen widths I opted for Bootstrap layout control
 
 Here are the links to my wireframes:
 
-### [Desktop Wireframe]()
+### [Desktop Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/desktop-wireframes)
 
-### [Tablet Wireframe]()
+### [Tablet Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/tablet-wireframes)
 
-### [Mobile Wireframe]()
+### [Mobile Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/mobile-wireframes)
 
 ## Features
 
