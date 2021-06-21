@@ -12,22 +12,28 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = 20
 
-function getData(cb) {
-
-    var xhr = new XMLHttpRequest();
-
-    xhr.open("GET", );
-    xhr.send();
-
-    xhr.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            cb(JSON.parse(this.responseText));
-        }
-    };
+function opentdbData(){
+fetch(baseURL)
+.then(res => res.json())
+.then(data => extractData(data.results))
+.then(results => console.log(results))
 }
 
-function writeToDocument(type) {
-    getData(type, function() {
-        document.getElementById('data').innerHTML = data;
+opentdbData()
+function extractData(listOfQuestions){
+    return listOfQuestions.map(item => {
+        return {
+            difficulty: item.difficulty,
+            question: item.question,
+            correctAnswer : item.correct_answer,
+            answers: [...item.incorrect_answers,item.correct_answer]
+        }
+    })
+}
+
+function createAnswers(listOfAnswers){
+    console.log(listOfAnswers)
+    listOfAnswers.forEach(() => {
+        
     });
 }
