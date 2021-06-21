@@ -67,7 +67,7 @@ I used the free icons available on [Font Awesome](https://fontawesome.com/icons?
 
 For colors I went for high contrast colors that provide the user clear signals as to how the game is progressing. I will elaborate on what colors are to be used where below.
 
-[Trivia Game Color Pallete](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/blob/master/wireframes/Gaming%20Trivia%20Color%20Pallete.png)
+![Trivia Game Color Pallete](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/blob/master/wireframes/Gaming%20Trivia%20Color%20Pallete.png)
 
 - #111111 Rich Black: This charcoal color will be used for the background, allowing all visual elements to pop out
 - #4381C1 Steel Blue: This will be used as a highlight and background color for certain elements on the page
