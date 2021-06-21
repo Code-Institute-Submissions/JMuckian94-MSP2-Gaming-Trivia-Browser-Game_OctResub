@@ -38,9 +38,10 @@ i {
     background-color: transparent;
 }
 
-.row {
-    margin-left: auto;
+.btn {
+    margin: 1rem auto;
 }
+
 .social-networks{
     font-size: 20rem;
     text-align: center;
