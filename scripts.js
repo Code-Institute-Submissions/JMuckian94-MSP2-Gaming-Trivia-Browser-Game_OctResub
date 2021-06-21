@@ -28,7 +28,7 @@ function extractData(listOfQuestions){
             correctAnswer : item.correct_answer,
             answers: [...item.incorrect_answers,item.correct_answer]
         }
-    })
+    });
 }
 
 function createAnswers(listOfAnswers){
