@@ -65,7 +65,11 @@ I used the free icons available on [Font Awesome](https://fontawesome.com/icons?
 
 #### Colors
 
+[Trivia Game Color Pallete]()
+
 #### Structure
+
+For adaptive structure on all screen widths I opted for Bootstrap layout controls. This will keep all content in their respective rows and columns on the page. The html will be assigned to a single page with the Javascript scripts showing and hiding the appropriate content once the user initiated the game or finishes it.
 
 ## Wireframes
 
