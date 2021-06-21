@@ -31,9 +31,13 @@ function extractData(listOfQuestions){
     });
 }
 
+console.log(extractData(listOfQuestions))
+
 function createAnswers(listOfAnswers){
     console.log(listOfAnswers)
     listOfAnswers.forEach(answer => {
         console.log(`<a href="#" class="option-text btn btn-outline-primary btn-lg">${answer.correctAnswer}</a>`)
     });
 }
+
+console.log(extractData(listOfAnswers))
