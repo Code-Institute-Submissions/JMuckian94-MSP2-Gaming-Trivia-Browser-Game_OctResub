@@ -1,5 +1,3 @@
-const baseURL = "https://opentdb.com/api.php?amount=20&category=15";
-
 const question = document.querySelector('#question');
 const options = document.querySelector('.option-text');
 const progressText = document.querySelector('#progressText');
@@ -12,8 +10,21 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = 20
 
+let letsplayBtn = document.getElementById("letsplay-btn");
+
+letsplayBtn.onclick = startGame();
+
+function startGame() {
+    var gameStart = document.getElementsByClassName("home-page");
+    if (x.style.display === "block") {
+        gameStart.style.display = "none";
+    } else {
+        gameStart.style.display = "block";
+    }
+  }
+
 function opentdbData(){
-fetch(baseURL)
+fetch("https://opentdb.com/api.php?amount=20&category=15")
 .then(res => res.json())
 .then(data => extractData(data.results))
 .then(results => console.log(results))
@@ -30,6 +41,10 @@ function extractData(listOfQuestions){
         }
     });
 }
+
+function useAPIData(item) {
+    document.querySelector("#question").innerHTML = `Question : ${item.results[0].question}`
+  }
 
 function createAnswers(listOfAnswers){
     var answers = [0,1,2,3];
