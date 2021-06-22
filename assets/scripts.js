@@ -1,9 +1,9 @@
 // Constants
-const question = document.querySelector('#question');
-const options = document.querySelector('.option-text');
-const progressText = document.querySelector('#progressText');
-const scoreText = document.querySelector('#score');
-const progressBarFull = document.querySelector('#progressBarFull');
+const question = document.getElementById('question');
+const options = document.getElementsByClassName('option-text');
+const progressText = document.getElementById('progressText');
+const scoreText = document.getElementById('score');
+const progressBarFull = document.getElementById('progressBarFull');
 
 const apiUrl = "https://opentdb.com/api.php?amount=20&category=15";
 
@@ -55,8 +55,9 @@ function createAnswers(listOfAnswers){
 
 // Toggle intro function
 
-$(letsplayBtn).toggle(function () {
+$(letsplayBtn).toggle(function() {
     $(intro-section).addClass("hidden");
 }, function () {
     $(intro-section).removeClass("hidden");
 });
+

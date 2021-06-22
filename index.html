@@ -22,7 +22,7 @@
                 </div>
             </div>
             <!-- Button hides intro section and shows game -->
-            
+
             <!-- Button hides intro section and highscores section -->
             <div class="row">
                 <div class="col-12">
@@ -34,77 +34,84 @@
             </div>
         </div>
     </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <button id="letsplay-btn" class="btn btn-primary btn-lg btn-block" type="button"
-                        data-toggle="collapse" data-target="#intro-section" aria-expanded="false"
-                        aria-controls="intro-section">
-                        <h2>Lets Play! <i class="fas fa-gamepad"></i></h2>
-                    </button>
-                </div>
-            </div>
-        </div>
-    <!-- Main Game Container -->
     <div class="container-fluid">
-        <div id="game">
-            <div id="hud">
-                <div class="row hud-item">
-                    <h1 id="progressText" class="hud-prefix">
-                        Question 1,2,3
-                    </h1>
-                    <div id="progressBar">
-                        <div id="progressBarFull"></div>
-                    </div>
-                </div>
-                <div class="row hud-item">
-                    <p class="hud-prefix">
-                        Score
-                    </p>
-                    <h1 class="hud-main-text" id="score">
-                        0
-                    </h1>
-                </div>
-            </div>
-            <div class="row">
-                <div id="question">
-                    <h2></h2>
-                </div>
-            </div>
-            <div class="row">
-                <button type="button" class="optionText btn btn-outline-primary btn-lg">
-                    <p>Option</p>
+        <div class="row">
+            <div class="col-12">
+                <button id="letsplay-btn" class="btn btn-primary btn-lg btn-block" type="button" data-toggle="collapse"
+                    data-target="#intro-section" aria-expanded="false" aria-controls="intro-section">
+                    <h2>Lets Play! <i class="fas fa-gamepad"></i></h2>
                 </button>
             </div>
         </div>
     </div>
-    <!-- SocialLinks -->
-    <footer class="container-fluid">
-        <div class="row">
-            <h2>Challenge your friends!</h2>
+    <!-- Main Game Container -->
+    <div class="container-fluid">
+        <div id="game" class="row">
+            <div class="col-sm-6">
+                <div id="hud">
+                    <div id="hud-item">
+                        <h2 class="hud-prefix">
+                            Question
+                        </h2>
+                        <h2 class="hud-main-text" id="questionCounter">
+                            1/20
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+            <div id="hud">
+                <div id="hud-item">
+                    <h2 class="hud-prefix">
+                        Score
+                    </h2>
+                    <h2 class="hud-main-text" id="score">
+                        0
+                    </h2>
+                </div>
+            </div>
         </div>
-        <div class="row social-networks">
-            <div class="col-3">
-                <a href="https://www.facebook.com" target="_blank">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
+            <div class="row">
+                <div id="question">
+                    <h2>What is the answer to this question?</h2>
+                </div>
             </div>
-            <div class="col-3">
-                <a href="https://www.twitter.com" target="_blank">
-                    <i class="fab fa-twitter-square"></i></a>
-            </div>
-            <div class="col-3">
-                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-            </div>
-            <div class="col-3">
-                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="optionText btn btn-outline-primary btn-lg">
+                        <p>Option</p>
+                    </button>
+                </div>
             </div>
         </div>
-    </footer>
-    <script src="scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        <!-- SocialLinks -->
+        <footer class="container-fluid">
+            <div class="row">
+                <h2>Challenge your friends!</h2>
+            </div>
+            <div class="row social-networks">
+                <div class="col-3">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fab fa-twitter-square"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <script src="scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
 </body>
 

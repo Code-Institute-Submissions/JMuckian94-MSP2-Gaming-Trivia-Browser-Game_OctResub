@@ -7,12 +7,12 @@
     border: 0;
     font-size: 62.5%;
     font-family: 'Roboto Mono', monospace;
-    background-color: black;
+    background-color: #111111;
 }
 
 h1 {
     font-size: 5rem;
-    color: white;
+    color: #fff;
     margin: 3rem auto;
     text-align: center;
     background-color: transparent;
@@ -52,4 +52,12 @@ i {
 /* Hiding the intro section */
 .hidden {
     display: none;
+}
+
+#highscore-btn {
+    background-color: #71B340;
+}
+
+#letsplay-btn {
+    background-color: #4381C1;
 }
