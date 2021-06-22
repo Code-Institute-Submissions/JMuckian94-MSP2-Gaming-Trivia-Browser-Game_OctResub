@@ -1,10 +1,11 @@
 // Constants
-
 const question = document.querySelector('#question');
 const options = document.querySelector('.option-text');
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
+
+const apiUrl = "https://opentdb.com/api.php?amount=20&category=15";
 
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -14,12 +15,11 @@ let availableQuestions = 20
 
 // Fetches question and answer data from api database
 function opentdbData(){
-fetch("https://opentdb.com/api.php?amount=20&category=15")
+fetch(apiUrl)
 .then(res => res.json())
 .then(data => extractData(data.results))
 .then(results => console.log(results))
 }
-
 opentdbData()
 function extractData(listOfQuestions){
     return listOfQuestions.map(item => {
@@ -34,7 +34,7 @@ function extractData(listOfQuestions){
 // Used to populate question section of game
 
 function useAPIData(item) {
-    $("#question").innerHTML = `Question : ${item.results[0].question}`
+    $("#question").innerHTML = `question: ${item.results[0].question}`
   }
 
 // Used to populate answers section of game

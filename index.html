@@ -14,29 +14,38 @@
 </head>
 
 <body>
-    <div id="intro-section" class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <h1>Are you ready for some video game trivia?</h1>
+    <div class="wrapper">
+        <div id="intro-section" class="container-fluid collapse.show">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Are you ready for some video game trivia?</h1>
+                </div>
             </div>
-        </div>
-        <!-- Button hides intro section and shows game -->
-        <div class="row">
-            <div class="col-12">
-                <button id="letsplay-btn" class="btn btn-primary btn-lg btn-block" data-toggle="collapse" aria-controls="intro-section">
-                    <h2>Lets Play! <i class="fas fa-gamepad"></i></h2>
-                </button>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <button id="highscore-btn" class="btn btn-success btn-lg btn-block" data-toggle="collapse" aria-controls="">
-                    <h2>Highscores <i class="fas fa-star"></i></h2>
-                </button>
+            <!-- Button hides intro section and shows game -->
+            
+            <!-- Button hides intro section and highscores section -->
+            <div class="row">
+                <div class="col-12">
+                    <button id="highscore-btn" class="btn btn-success btn-lg btn-block" data-toggle="collapse"
+                        aria-controls="">
+                        <h2>High Scores <i class="fas fa-star"></i></h2>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <button id="letsplay-btn" class="btn btn-primary btn-lg btn-block" type="button"
+                        data-toggle="collapse" data-target="#intro-section" aria-expanded="false"
+                        aria-controls="intro-section">
+                        <h2>Lets Play! <i class="fas fa-gamepad"></i></h2>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <!-- Main Game Container -->
     <div class="container-fluid">
         <div id="game">
             <div id="hud">
@@ -59,7 +68,7 @@
             </div>
             <div class="row">
                 <div id="question">
-                    <h2>What is the answer to this question?</h2>
+                    <h2></h2>
                 </div>
             </div>
             <div class="row">
@@ -92,12 +101,11 @@
             </div>
         </div>
     </footer>
-    <!-- SocialLinks X -->
-    
+    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="scripts.js"></script>
+
 </body>
 
 </html>
