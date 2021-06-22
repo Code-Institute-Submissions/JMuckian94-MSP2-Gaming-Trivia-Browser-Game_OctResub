@@ -91,9 +91,27 @@ Here are the links to my wireframes:
 
 ## Features
 
-### Navigation
+### Intro Section
+
+The Intro Section is there to welcome the user and provide information on what kind of game they are playing and how it works. Users will be asked a series of 20 questions related to the video game industry. Each of these questions will have between 2 and 4 possible answers to choose from depending on the difficulty. Correct answers will be tallied by the scoreboard. Users are encouraged to aim for high scores and to share the game with friends via social links at the bottom. 
+
+### Lets Play/High Scores Buttons
+
+These buttons will control css operations to hide the intro section and show the relevant section depending on which was clicked. The 'Lets Play' button and the 'High Scores' buttons are different colours and have FontAwsome icons to distinguish them from each other.
+
+### Game Section
+
+The game section will fetch data from opentdb.com's database in order to populate the question and answer area. I have created js functions to randomise the answers for each question and opentdb keeps track of the number of questions answered and whether the question has already been asked.
 
 ## Features to be Implemented
+
+### Timer
+
+I want to limit the amount of time the user has to answer questions by implementing a timer set to 10 seconds. This will put pressure on the player but should enhance enjoyment levels by increasing the challenge.
+
+### High Scores Section
+
+I want to create a section that keeps track of players who have played the game and how they performed. This will require a leader board table.
 
 ## Technologies Used
 
@@ -117,7 +135,36 @@ Here are the links to my wireframes:
 - [Balsamiq](https://balsamiq.com/)
 - [W3C HTML & CSS Validation Service](https://validator.w3.org/)
 
-## Testing of Interactive Elements (Use user stories, Story 1,2,3 etc)
+## Testing of Interactive Elements
+
+#### Plan
+
+Invite the user to play the game using an attractive and fun landing page.
+
+#### Implementation
+
+I used high contrasting colors and a mono font to give that classic arcade feel. Structure is laid out using Bootstrap.
+
+#### Test
+
+All style elements appearing as intended. Layout matches wireframe designs.
+#### Result
+
+Pass
+#### Verdict
+
+Working as intended.
+
+- As a user, I want to be invited to play by an attractive and fun landing page
+- 
+- As a user, I want to click a button that starts the trivia game
+- As a user, I want the game to have 20 questions
+- As a user, I want the game to notify me if I have gotten the answer right or wrong
+- As a user, I want the game to keep tabs on how many questions have been asked and answered
+- As a user, I want a final tally of my score
+- As a user, I want to see some kind of leaderboard functionality
+- As a user, I want randomly selected questions to be pulled from a database to improve replayability
+- As a user, I want the user interface to be bug free and easy to navigate
 
 ### Bugs
 
