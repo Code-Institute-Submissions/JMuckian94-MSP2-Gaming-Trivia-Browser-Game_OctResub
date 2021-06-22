@@ -11,26 +11,27 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles.css">
-    <script src="scripts.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid home-page">
+    <div id="intro-section" class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <h1>Are you ready for some video game trivia?</h1>
             </div>
         </div>
+        <!-- Button hides intro section and shows game -->
         <div class="row">
             <div class="col-12">
-                <button type="button" id="letsplay-btn" class="btn btn-primary btn-lg btn-block">
+                <button id="letsplay-btn" class="btn btn-primary btn-lg btn-block" data-toggle="collapse" aria-controls="intro-section">
                     <h2>Lets Play! <i class="fas fa-gamepad"></i></h2>
                 </button>
             </div>
         </div>
+
         <div class="row">
             <div class="col-12">
-                <button href="highscores.html" id="highscore-btn" class="btn btn-success btn-lg btn-block">
+                <button id="highscore-btn" class="btn btn-success btn-lg btn-block" data-toggle="collapse" aria-controls="">
                     <h2>Highscores <i class="fas fa-star"></i></h2>
                 </button>
             </div>
@@ -92,9 +93,11 @@
         </div>
     </footer>
     <!-- SocialLinks X -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

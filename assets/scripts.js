@@ -1,3 +1,5 @@
+// Constants
+
 const question = document.querySelector('#question');
 const options = document.querySelector('.option-text');
 const progressText = document.querySelector('#progressText');
@@ -10,19 +12,7 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = 20
 
-let letsplayBtn = document.getElementById("letsplay-btn");
-
-letsplayBtn.onclick = startGame();
-
-function startGame() {
-    var gameStart = document.getElementsByClassName("home-page");
-    if (x.style.display === "block") {
-        gameStart.style.display = "none";
-    } else {
-        gameStart.style.display = "block";
-    }
-  }
-
+// Fetches question and answer data from api database
 function opentdbData(){
 fetch("https://opentdb.com/api.php?amount=20&category=15")
 .then(res => res.json())
@@ -41,14 +31,16 @@ function extractData(listOfQuestions){
         }
     });
 }
+// Used to populate question section of game
 
 function useAPIData(item) {
-    document.querySelector("#question").innerHTML = `Question : ${item.results[0].question}`
+    $("#question").innerHTML = `Question : ${item.results[0].question}`
   }
 
+// Used to populate answers section of game
 function createAnswers(listOfAnswers){
-    var answers = [0,1,2,3];
-    for(i = 0; i < 4; i++) {
+    var answers = [];
+    for(i = 0; i < answers; i++) {
         var button = document.createElement('button');
         button.innerhtml = answers[i];
         button.className = "btn btn-outline-primary btn-lg";
@@ -60,3 +52,11 @@ function createAnswers(listOfAnswers){
         console.log(`<a href="#" class="option-text btn btn-outline-primary btn-lg">${answer.correctAnswer}</a>`)
     });
 }
+
+// Toggle intro function
+
+$(letsplayBtn).toggle(function () {
+    $(intro-section).addClass("hidden");
+}, function () {
+    $(intro-section).removeClass("hidden");
+});
