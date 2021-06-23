@@ -4,7 +4,7 @@ const options = document.querySelector('.option-text');
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
-const 
+
 
 
 const apiUrl = "https://opentdb.com/api.php?amount=20&category=15";
@@ -84,15 +84,19 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
-choices.forEach((choice) => {
-    choice.addEventListener('click' )
-})
+// choices.forEach((choice) => {
+//     choice.addEventListener('click' )
+// })
 
 
 // Toggle intro function
-
+$(document).ready(function() {
+    $('.letsplay-reset-btn').click(function() {
+      $(this).parents(".intro-section").toggle();
+    });
+  });
 // $(letsplayBtn).toggle(function() {
-//     $(intro-section).addClass("hidden");
+//     $(.letsplay-reset-btn).addClass("hidden");
 // }, function () {
 //     $(intro-section).removeClass("hidden");
 // });

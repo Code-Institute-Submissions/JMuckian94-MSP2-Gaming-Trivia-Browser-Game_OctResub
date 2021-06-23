@@ -36,6 +36,9 @@ i {
     font-size: 4rem;
 }
 
+.collapsing {
+    transition: 0ms;
+}
 
 .btn {
     margin: 1rem auto;
@@ -49,8 +52,8 @@ i {
 
 
 /* Hiding the intro section */
-.hidden {
-    display: none;
+.intro-section {
+    display: block;
 }
 
 .letsplay-reset-btn {
