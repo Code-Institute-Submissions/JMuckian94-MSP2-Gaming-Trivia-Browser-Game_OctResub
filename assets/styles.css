@@ -5,37 +5,34 @@
     box-sizing: border-box;
     margin: 0;
     border: 0;
+    
+}
+
+html {
     font-size: 62.5%;
-    font-family: 'Roboto Mono', monospace;
+}
+
+body {
     background-color: #111111;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.6rem;
 }
 
 h1 {
     font-size: 5rem;
-    color: #fff;
-    margin: 3rem auto;
-    text-align: center;
-    background-color: transparent;
 }
 
 h2 {
     font-size: 4rem;
-    color: white;
-    margin: 3rem auto;
-    background-color: transparent;
 }
 
 p {
     font-size: 3rem;
-    color: white;
-    margin: 3rem auto;
-    background-color: transparent;
 }
 
 /* Removes black boxes from behind letters */
 i {
     font-size: 4rem;
-    background-color: transparent;
 }
 
 
@@ -43,6 +40,12 @@ i {
     margin: 1rem auto;
 }
 
+.common-styles {
+    color: #fff;
+    margin: 3rem auto;
+    background-color: transparent;
+    text-align: center;
+}
 .social-networks{
     font-size: 20rem;
     text-align: center;

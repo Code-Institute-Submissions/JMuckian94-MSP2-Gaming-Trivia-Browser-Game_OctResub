@@ -73,9 +73,9 @@ getNewQuestion = () => {
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
-    choices.forEach((choice) => {
+    options.forEach((option) => {
         const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
+        option.innerText = currentQuestion['option' + number];
     });
 
     availableQuestions.splice(questionIndex, 1);
