@@ -7,11 +7,11 @@ const progressBarFull = document.getElementById('progressBarFull');
 
 const apiUrl = "https://opentdb.com/api.php?amount=20&category=15";
 
-let currentQuestion = {}
-let acceptingAnswers = true
-let score = 0
-let questionCounter = 0
-let availableQuestions = 20
+let currentQuestion = {};
+let acceptingAnswers = false;
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = 20;
 
 // Fetches question and answer data from api database
 function opentdbData(){
@@ -53,11 +53,45 @@ function createAnswers(listOfAnswers){
     });
 }
 
+// Start Game Function
+
+startGame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
+}
+
+// Get New Question Function
+
+getNewQuestion = () => {
+    if(availableQuestions.length === 0 || questionCounter > 20) {
+        // End of game parameter
+    }
+    questionCounter++;
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerText = currentQuestion.question;
+
+    choices.forEach((choice) => {
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number];
+    });
+
+    availableQuestions.splice(questionIndex, 1);
+    acceptingAnswers = true;
+};
+
+choices.forEach((choice) => {
+    choice.addEventListener('click' )
+})
+
+
 // Toggle intro function
 
-$(letsplayBtn).toggle(function() {
-    $(intro-section).addClass("hidden");
-}, function () {
-    $(intro-section).removeClass("hidden");
-});
+// $(letsplayBtn).toggle(function() {
+//     $(intro-section).addClass("hidden");
+// }, function () {
+//     $(intro-section).removeClass("hidden");
+// });
 
