@@ -17,16 +17,32 @@
     <div class="wrapper">
         <div id="intro-section" class="container-fluid collapse.show">
             <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12">
                     <h1>Are you ready for some video game trivia?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>How to play</h2>
+                    <p>
+                        You will be asked 20 questions related to video games and the gaming industry.
+                        These questions will vary in difficulty, the easiest being true or false and the hardest being
+                        multiple choice.
+                    </p>
+                    <p>
+                        You will have 15 seconds to answer each question. A progress bar will keep tabs on your
+                        progress.
+                        Aim for a high score and a change on the leader board!
+                    </p>
+
                 </div>
             </div>
             <!-- Button hides intro section and shows game -->
 
             <!-- Button hides intro section and highscores section -->
             <div class="row">
-                <div class="col-12">
-                    <button id="highscore-btn" class="btn btn-success btn-lg btn-block" data-toggle="collapse"
+                <div class="col-sm-12">
+                    <button id="highscore-btn" class="btn btn-lg btn-block" data-toggle="collapse"
                         aria-controls="">
                         <h2>High Scores <i class="fas fa-star"></i></h2>
                     </button>
@@ -36,8 +52,8 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <button id="letsplay-btn" class="btn btn-primary btn-lg btn-block" type="button" data-toggle="collapse"
+            <div class="col-sm-12">
+                <button id="letsplay-btn" class="btn btn-lg btn-block" type="button" data-toggle="collapse"
                     data-target="#intro-section" aria-expanded="false" aria-controls="intro-section">
                     <h2>Lets Play! <i class="fas fa-gamepad"></i></h2>
                 </button>
@@ -46,39 +62,43 @@
     </div>
     <!-- Main Game Container -->
     <div class="container-fluid">
-        <div id="game" class="row">
-            <div class="col-sm-6">
-                <div id="hud">
-                    <div id="hud-item">
-                        <h2 class="hud-prefix">
-                            Question
-                        </h2>
-                        <h2 class="hud-main-text" id="questionCounter">
-                            1/20
-                        </h2>
+        <div id="game">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="hud">
+                        <div id="hud-item">
+                            <h2 class="hud-prefix">
+                                Question
+                            </h2>
+                            <h2 class="hud-main-text" id="questionCounter">
+                                1/20
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="hud">
+                        <div id="hud-item">
+                            <h2 class="hud-prefix">
+                                Score
+                            </h2>
+                            <h2 class="hud-main-text" id="score">
+                                0
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-            <div id="hud">
-                <div id="hud-item">
-                    <h2 class="hud-prefix">
-                        Score
-                    </h2>
-                    <h2 class="hud-main-text" id="score">
-                        0
-                    </h2>
-                </div>
-            </div>
-        </div>
             <div class="row">
-                <div id="question">
-                    <h2>What is the answer to this question?</h2>
+                <div class="col-sm-12">
+                    <div id="question">
+                        <h1>What is the answer to this question?</h1>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <button type="button" class="optionText btn btn-outline-primary btn-lg">
+                <div class="col-sm-12">
+                    <button id="optionText" type="button" class="btn btn-lg btn-block">
                         <p>Option</p>
                     </button>
                 </div>
@@ -90,19 +110,19 @@
                 <h2>Challenge your friends!</h2>
             </div>
             <div class="row social-networks">
-                <div class="col-3">
+                <div class="col-sm-3">
                     <a href="https://www.facebook.com" target="_blank">
                         <i class="fab fa-facebook-square"></i>
                     </a>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-3">
                     <a href="https://www.twitter.com" target="_blank">
                         <i class="fab fa-twitter-square"></i></a>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-3">
                     <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-3">
                     <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>

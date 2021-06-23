@@ -22,7 +22,6 @@ h2 {
     font-size: 4rem;
     color: white;
     margin: 3rem auto;
-    text-align: center;
     background-color: transparent;
 }
 
@@ -60,4 +59,8 @@ i {
 
 #letsplay-btn {
     background-color: #4381C1;
+}
+
+#optionText {
+    background-color: #db222a;
 }
