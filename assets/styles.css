@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    color: #fff;
     background-color: #111111;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.6rem;
@@ -41,29 +42,32 @@ i {
 }
 
 .common-styles {
-    color: #fff;
     margin: 3rem auto;
     background-color: transparent;
     text-align: center;
 }
-.social-networks{
-    font-size: 20rem;
-    text-align: center;
-}
+
 
 /* Hiding the intro section */
 .hidden {
     display: none;
 }
 
+.letsplay-reset-btn {
+    background-color: #4381C1;
+}
+
 #highscore-btn {
     background-color: #71B340;
 }
 
-#letsplay-btn {
-    background-color: #4381C1;
-}
 
 #optionText {
     background-color: #db222a;
+}
+
+
+#social-network-links i{
+    font-size: 7.5rem;
+    text-align: center;
 }

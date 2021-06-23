@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div id="intro-section" class="container-fluid">
+    <div id="intro-section" class="container-fluid common-styles">
         <div class="row">
             <div class="col-sm-12">
                 <h1>Are you ready for some video game trivia?</h1>
@@ -32,21 +32,21 @@
             </div>
             <!-- Button hides intro section and shows game -->
             <div class="col-sm-12 col-md-6">
-                <button id="letsplay-btn" class="btn btn-lg btn-block" type="button" data-toggle="collapse"
+                <button class="letsplay-reset-btn btn btn-lg btn-block" type="button" data-toggle="collapse"
                     data-target="#intro-section" aria-expanded="false" aria-controls="intro-section">
                     <h2>Lets Play! <i class="fas fa-gamepad"></i></h2>
                 </button>
             </div>
             <!-- Button hides intro section and highscores section -->
-                <div class="col-sm-12 col-md-6">
-                    <button id="highscore-btn" class="btn btn-lg btn-block" data-toggle="collapse" aria-controls="">
-                        <h2>High Scores <i class="fas fa-star"></i></h2>
-                    </button>
-                </div>
+            <div class="col-sm-12 col-md-6">
+                <button id="highscore-btn" class="btn btn-lg btn-block" data-toggle="collapse" aria-controls="">
+                    <h2>High Scores <i class="fas fa-star"></i></h2>
+                </button>
             </div>
         </div>
+    </div>
     <!-- Main Game Container -->
-    <section class="container-fluid" id="game">
+    <section id="game" class="container-fluid common-styles">
         <div class="row">
             <div class="col-sm-6">
                 <div id="hud">
@@ -73,32 +73,34 @@
                 </div>
             </div>
         </div>
-            <div class="col-sm-12">
-                <div id="question">
-                    <h1>What is the answer to this question?</h1>
-                </div>
+        <div class="col-sm-12">
+            <div id="question">
+                <h1>What is the answer to this question?</h1>
             </div>
-            <div class="col-sm-12">
-                <button id="optionText" type="button" class="btn btn-lg btn-block">
-                    <p>Option</p>
+        </div>
+        <div class="col-sm-12">
+            <button id="optionText" type="button" class="btn btn-lg btn-block">
+                <p>Option</p>
+            </button>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <button class="letsplay-reset-btn btn" type="button" data-toggle="collapse"
+                    data-target="#intro-section" aria-expanded="false" aria-controls="intro-section">
+                    <h2>Restart <i class="fas fa-redo"></i></h2>
                 </button>
             </div>
         </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <button id="restart" class="btn btn-lg btn-block" type="button" data-toggle="collapse"
-                        data-target="#intro-section" aria-expanded="false" aria-controls="intro-section">
-                        <h2>Lets Play! <i class="fas fa-gamepad"></i></h2>
-                    </button>
-                </div>
-            </div>
     </section>
     <!-- SocialLinks -->
-    <footer class="container-fluid">
+    <footer class="container-fluid common-styles">
         <div class="row">
-            <h2>Challenge your friends!</h2>
+            <div class="col-sm-12">
+                <h2>Challenge your friends!</h2>
+            </div>
         </div>
-        <div class="row social-networks">
+        <div id="social-network-links" class="row">
             <div class="col-sm-3">
                 <a href="https://www.facebook.com" target="_blank" rel="nopener" aria-label="">
                     <i class="fab fa-facebook-square"></i>

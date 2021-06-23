@@ -1,9 +1,11 @@
 // Constants
-const question = document.getElementById('question');
-const options = document.getElementsByClassName('option-text');
-const progressText = document.getElementById('progressText');
-const scoreText = document.getElementById('score');
-const progressBarFull = document.getElementById('progressBarFull');
+const question = document.querySelector('#question');
+const options = document.querySelector('.option-text');
+const progressText = document.querySelector('#progressText');
+const scoreText = document.querySelector('#score');
+const progressBarFull = document.querySelector('#progressBarFull');
+const 
+
 
 const apiUrl = "https://opentdb.com/api.php?amount=20&category=15";
 
@@ -94,4 +96,14 @@ choices.forEach((choice) => {
 // }, function () {
 //     $(intro-section).removeClass("hidden");
 // });
+
+const toggleGame = (state) => {
+    hideGame ? introSectionRef.classList : introSectionRef
+}
+
+restartBtn.addEventListener('click', )
+
+toggleGame = (state) => {
+    
+}
 
