@@ -4,6 +4,10 @@ const options = document.querySelector('.option-text');
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
+const playBtnRef = document.querySelector ('#play-btn');
+const restartBtnRef = document.querySelector('#restart-btn');
+
+
 
 
 
@@ -102,12 +106,8 @@ $(document).ready(function() {
 // });
 
 const toggleGame = (state) => {
-    hideGame ? introSectionRef.classList : introSectionRef
+    showGame ? introSectionRef.classList.add('block'): introSectionRef.classList.add('hidden');
 }
 
-restartBtn.addEventListener('click', )
-
-toggleGame = (state) => {
-    
-}
-
+restartBtnRef.addEventListener('click', toggleGame(false));
+playBtnRef.addEventListener('click', toggleGame(true));

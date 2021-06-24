@@ -32,8 +32,8 @@
             </div>
             <!-- Button hides intro section and shows game -->
             <div class="col-sm-12 col-md-6">
-                <button class="letsplay-reset-btn btn btn-lg btn-block" type="button" data-toggle="collapse"
-                    data-target="#intro-section" aria-expanded="false" aria-controls="intro-section">
+                <button id="play-btn" class="letsplay-reset-btn btn btn-lg btn-block" type="button" data-toggle="collapse"
+                    data-target="#intro-section, #game-section" aria-expanded="false" aria-controls="intro-section">
                     <h2>Lets Play! <i class="fas fa-gamepad"></i></h2>
                 </button>
             </div>
@@ -46,7 +46,7 @@
         </div>
     </div>
     <!-- Main Game Container -->
-    <section id="game" class="container-fluid common-styles">
+    <section id="game-section" class="container-fluid common-styles collapse hide">
         <div class="row">
             <div class="col-sm-6">
                 <div id="hud">
@@ -86,8 +86,8 @@
         </div>
         <div class="row">
             <div class="offset-sm-8">
-                <button class="letsplay-reset-btn btn" type="button" data-toggle="collapse"
-                    data-target="#intro-section" aria-expanded="false" aria-controls="intro-section">
+                <button id="restart-btn" class="letsplay-reset-btn btn" type="button" data-toggle="collapse"
+                    data-target="#intro-section, " aria-expanded="false" aria-controls="intro-section">
                     <h2>Restart <i class="fas fa-redo"></i></h2>
                 </button>
             </div>
