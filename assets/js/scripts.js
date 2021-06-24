@@ -7,10 +7,6 @@ const progressBarFull = document.querySelector('#progressBarFull');
 const playBtnRef = document.querySelector ('#play-btn');
 const restartBtnRef = document.querySelector('#restart-btn');
 
-
-
-
-
 const apiUrl = "https://opentdb.com/api.php?amount=20&category=15";
 
 let currentQuestion = {};
@@ -40,22 +36,18 @@ function extractData(listOfQuestions){
 // Used to populate question section of game
 
 function useAPIData(item) {
-    $("#question").innerHTML = `question: ${item.results[0].question}`
+    $("#question").innerHTML = `question: ${item.results[0].question}`;
   }
 
 // Used to populate answers section of game
 function createAnswers(listOfAnswers){
     var answers = [];
-    for(i = 0; i < answers; i++) {
-        var button = document.createElement('button');
-        button.innerhtml = answers[i];
+    answers.forEach((answer) => {
+        const buttonRef = document.createElement('button');
+        const buttonDiv = document.querySelector("button");
+        button.innerHTML = answers[i];
         button.className = "btn btn-outline-primary btn-lg";
-        var buttonDiv = document.getElementById("buttons");
         buttonDiv.appendChild(button);
-    }
-    console.log(listOfAnswers)
-    listOfAnswers.forEach(answer => {
-        console.log(`<a href="#" class="option-text btn btn-outline-primary btn-lg">${answer.correctAnswer}</a>`)
     });
 }
 
@@ -91,19 +83,6 @@ getNewQuestion = () => {
 // choices.forEach((choice) => {
 //     choice.addEventListener('click' )
 // })
-
-
-// Toggle intro function
-$(document).ready(function() {
-    $('.letsplay-reset-btn').click(function() {
-      $(this).parents(".intro-section").toggle();
-    });
-  });
-// $(letsplayBtn).toggle(function() {
-//     $(.letsplay-reset-btn).addClass("hidden");
-// }, function () {
-//     $(intro-section).removeClass("hidden");
-// });
 
 const toggleGame = (state) => {
     showGame ? introSectionRef.classList.add('block'): introSectionRef.classList.add('hidden');
