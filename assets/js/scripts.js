@@ -1,6 +1,6 @@
-const apiUrl = 'https://opentdb.com/api.php?amount=20&category=15';
+const apiUrl = 'https://opentdb.com/api.php?amount=20&category=15&type=multiple';
 const question = document.querySelector('#question');
-const options = Array.from(document.querySelector('.option-text'));
+const options = document.querySelector('.option-text');
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
@@ -22,12 +22,12 @@ fetch(apiUrl)
     return res.json()
 })
 .then((loadedQuestions) => {
-    questions = questions = loadedQuestions.results.map(item => {
+    questions = loadedQuestions.results.map(loadedQuestion => {
         const formattedQuestion = {
             question: loadedQuestion.question,
         };
 
-        formattedQuestion.answer = Math.floor(Math.random()* answers) + 1;
+        formattedQuestion.answer = Math.floor(Math.random()* 4) + 1;
         answerChoices.splice(
             formattedQuestion.answer - 1,
             0,
@@ -36,7 +36,7 @@ fetch(apiUrl)
 
         answerOptions.forEach((option, index) => {
             formattedQuestion['option' + (index + 1)] = option;
-            const buttonRef = document.createElement('button');
+             document.createElement('button');
             const buttonDiv = document.querySelector("button");
             button.innerHTML = answers[i];
             button.className = "btn btn-outline-primary btn-lg";
@@ -86,9 +86,9 @@ getNewQuestion = () => {
 //     choice.addEventListener('click' )
 // })
 
-const toggleGame = (state) => {
-    showGame ? introSectionRef.classList.add('block'): introSectionRef.classList.add('hidden');
-}
+// const toggleGame = (state) => {
+//     showGame ? introSectionRef.classList.add('block'): introSectionRef.classList.add('hidden');
+// }
 
-restartBtnRef.addEventListener('click', toggleGame(false));
-playBtnRef.addEventListener('click', toggleGame(true));
+// restartBtnRef.addEventListener('click', toggleGame(false));
+// playBtnRef.addEventListener('click', toggleGame(true));
