@@ -13,17 +13,19 @@ let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
-let availableQuestions = 20;
+let availableQuestions = [];
+
+let questions = [];
 
 // Fetches question and answer data from api database
-function opentdbData(){
+opentdbData = () => {
 fetch(apiUrl)
 .then(res => res.json())
 .then(data => extractData(data.results))
 .then(results => console.log(results))
 }
 opentdbData()
-function extractData(listOfQuestions){
+extractData = (listOfQuestions) => {
     return listOfQuestions.map(item => {
         return {
             difficulty: item.difficulty,
@@ -35,12 +37,10 @@ function extractData(listOfQuestions){
 }
 // Used to populate question section of game
 
-function useAPIData(item) {
-    $("#question").innerHTML = `question: ${item.results[0].question}`;
-  }
+
 
 // Used to populate answers section of game
-function createAnswers(listOfAnswers){
+createAnswers = (listOfAnswers) => {
     var answers = [];
     answers.forEach((answer) => {
         const buttonRef = document.createElement('button');
