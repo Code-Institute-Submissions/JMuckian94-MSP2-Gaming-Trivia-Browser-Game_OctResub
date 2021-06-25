@@ -1,13 +1,11 @@
-// Constants
+const apiUrl = 'https://opentdb.com/api.php?amount=20&category=15';
 const question = document.querySelector('#question');
-const options = document.querySelector('.option-text');
+const options = Array.from(document.querySelector('.option-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 const playBtnRef = document.querySelector ('#play-btn');
 const restartBtnRef = document.querySelector('#restart-btn');
-
-const apiUrl = "https://opentdb.com/api.php?amount=20&category=15";
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -18,38 +16,42 @@ let availableQuestions = [];
 let questions = [];
 
 // Fetches question and answer data from api database
-opentdbData = () => {
 fetch(apiUrl)
-.then(res => res.json())
-.then(data => extractData(data.results))
-.then(results => console.log(results))
-}
-opentdbData()
-extractData = (listOfQuestions) => {
-    return listOfQuestions.map(item => {
-        return {
-            difficulty: item.difficulty,
-            question: item.question,
-            correctAnswer : item.correct_answer,
-            answers: [...item.incorrect_answers,item.correct_answer]
-        }
+
+.then((res) => {
+    return res.json()
+})
+.then((loadedQuestions) => {
+    questions = questions = loadedQuestions.results.map(item => {
+        const formattedQuestion = {
+            question: loadedQuestion.question,
+        };
+
+        formattedQuestion.answer = Math.floor(Math.random()* answers) + 1;
+        answerChoices.splice(
+            formattedQuestion.answer - 1,
+            0,
+            loadedQuestion.correct_answer
+        );
+
+        answerOptions.forEach((option, index) => {
+            formattedQuestion['option' + (index + 1)] = option;
+            const buttonRef = document.createElement('button');
+            const buttonDiv = document.querySelector("button");
+            button.innerHTML = answers[i];
+            button.className = "btn btn-outline-primary btn-lg";
+            buttonDiv.appendChild(button);
+        });
+
+        return formattedQuestion;
+
     });
-}
-// Used to populate question section of game
 
-
-
-// Used to populate answers section of game
-createAnswers = (listOfAnswers) => {
-    var answers = [];
-    answers.forEach((answer) => {
-        const buttonRef = document.createElement('button');
-        const buttonDiv = document.querySelector("button");
-        button.innerHTML = answers[i];
-        button.className = "btn btn-outline-primary btn-lg";
-        buttonDiv.appendChild(button);
-    });
-}
+    startGame()
+})
+.catch((err) => {
+    console.error(err);
+});
 
 // Start Game Function
 
