@@ -19,16 +19,17 @@ let questions = [];
 fetch(apiUrl)
 
 .then((res) => {
-    return res.json()
+    return res.json();
 })
 .then((loadedQuestions) => {
-    questions = loadedQuestions.results.map(loadedQuestion => {
+    questions = loadedQuestions.results.map((loadedQuestion) => {
         const formattedQuestion = {
             question: loadedQuestion.question,
         };
 
+        const answerOptions = [...loadedQuestion.incorrect_answers];
         formattedQuestion.answer = Math.floor(Math.random()* 4) + 1;
-        answerChoices.splice(
+        answerOptions.splice(
             formattedQuestion.answer - 1,
             0,
             loadedQuestion.correct_answer
@@ -36,11 +37,6 @@ fetch(apiUrl)
 
         answerOptions.forEach((option, index) => {
             formattedQuestion['option' + (index + 1)] = option;
-             document.createElement('button');
-            const buttonDiv = document.querySelector("button");
-            button.innerHTML = answers[i];
-            button.className = "btn btn-outline-primary btn-lg";
-            buttonDiv.appendChild(button);
         });
 
         return formattedQuestion;
@@ -48,9 +44,12 @@ fetch(apiUrl)
     });
 
     startGame()
+
 })
+
 .catch((err) => {
     console.error(err);
+
 });
 
 // Start Game Function
@@ -63,10 +62,13 @@ startGame = () => {
 }
 
 // Get New Question Function
+const maximumQuestions = 20;
 
 getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter > 20) {
-        // End of game parameter
+    if(availableQuestions.length === 0 || questionCounter >= maximumQuestions) {
+        localStorage.setItem('mostRecentScore', score);
+        //go to the end page
+        return window.location.assign('/end.html');
     }
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
