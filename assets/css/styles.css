@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     border: 0;
-    
+
 }
 
 html {
@@ -17,6 +17,7 @@ body {
     background-color: #111111;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.6rem;
+    height: 100%;
 }
 
 h1 {
@@ -56,24 +57,25 @@ i {
 
 .option-container {
     font-size: 2rem;
-    background-color: #4381C1;
+    background-color: #71B340;
     margin: 2rem auto;
     border-radius: 1rem;
-  }
+}
 
 .option-text {
     font-size: 4rem;
-    background-color: #db222a;
+    background-color: #4381C1;
 }
-  
+
+#question {
+    background-color: #db222a;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    font-size: 3rem;
+}
 
 #highscore-btn {
     background-color: #71B340;
-}
-
-
-#optionText {
-    background-color: #db222a;
 }
 
 #progressBar {
@@ -82,25 +84,33 @@ i {
     border: 0.3rem solid #4381C1;
     margin: 2rem auto;
     padding: 0;
-  }
-  
-  #progressBarFull {
+}
+
+#progressBarFull {
     height: 3.4rem;
     background-color: #4381C1;
-  }
+}
 
 
-#social-network-links i{
-    font-size: 7.5rem;
+#social-network-links i {
+    font-size: 5rem;
     text-align: center;
+    margin-top: 10rem;
 }
 
 #username {
     height: 6.5rem;
     border-radius: 0.3rem;
+    text-align: center;
 }
 
 #save-btn {
     background-color: #71B340;
     padding-bottom: 0;
+}
+
+#footer-section {
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
