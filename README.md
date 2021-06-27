@@ -13,7 +13,7 @@ To create a browser based trivia game that challanges the users knowledge of vid
 - An attractive landing page that invites the user to take interest in the game
 - A color palette that is easy on the eyes if the user is playing for extented periods
 - The game area being easy to view the questions, submit answers, and to generally navigate
-- An end of game section which tallies the score and provides words of congratulations or encouragement
+- An end of game section which tallies the score and provides words of congratulations
 - A website that works seamlessly on mobile, tablet and desktop devices
 - Social media links for if the user wishes to share with friends
 
@@ -29,11 +29,6 @@ To create a browser based trivia game that challanges the users knowledge of vid
 - As a user, I want randomly selected questions to be pulled from a database to improve replayability
 - As a user, I want the user interface to be bug free and easy to navigate
 
-### Site Owner Goals
-
-- To create an engaging experience for players that will keep them playing again and again
-- To have a trivia game with a mix of easy to difficult questions
-
 ### User Requirements and Expectations
 
 #### Requirements
@@ -48,7 +43,7 @@ To create a browser based trivia game that challanges the users knowledge of vid
 
 - The questions are fun, challenging and diverse
 - The game gives me a variety of choices per question
-- The game gives me an indication whether I got the right or wrong answer
+- The game will keep track of my score
 - I can add my final score to a leaderboard
 
 ### Design Choices
@@ -77,7 +72,7 @@ For colors I went for high contrast colors that provide the user clear signals a
 
 #### Structure
 
-For adaptive structure on all screen widths I opted for Bootstrap layout controls. This will keep all content in their respective rows and columns on the page. The html will be assigned to a single page with the Javascript scripts showing and hiding the appropriate content once the user initiated the game or finishes it.
+For adaptive structure on all screen widths I opted for Bootstrap layout controls. This will keep all content in their respective rows and columns on the page. Positioning and sizing was based on the mobile first approach. The html will be assigned to a single page with the Javascript scripts showing and hiding the appropriate content once the user initiated the game or finishes it.
 
 ## Wireframes
 
@@ -101,7 +96,7 @@ These buttons will control css operations to hide the intro section and show the
 
 ### Game Section
 
-The game section will fetch data from opentdb.com's database in order to populate the question and answer area. I have created js functions to randomise the answers for each question and opentdb keeps track of the number of questions answered and whether the question has already been asked.
+The game section will fetch data from opentdb.com's database in order to populate the question and answer area. I have created js functions to randomise the answers for each question and opentdb keeps track of the number of questions answered. A progress bar will also provide visual feedback to the user to see how many question are left.
 
 ## Features to be Implemented
 
@@ -109,9 +104,13 @@ The game section will fetch data from opentdb.com's database in order to populat
 
 I want to limit the amount of time the user has to answer questions by implementing a timer set to 10 seconds. This will put pressure on the player but should enhance enjoyment levels by increasing the challenge.
 
-### High Scores Section
+### Right / Wrong Feedback
 
-I want to create a section that keeps track of players who have played the game and how they performed. This will require a leader board table.
+I want to have the option buttons change color to give the player feedback whether they got the right or wrong answer.
+
+### Different Final Score Responces
+
+I want to implement different messages to appear depending on how well the player did.
 
 ## Technologies Used
 
@@ -127,6 +126,7 @@ I want to create a section that keeps track of players who have played the game 
 - [Font Awesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Open Trivia Database](https://opentdb.com/)
+- [jQuery Core 3.6.0 slim](https://code.jquery.com/)
 
 ### Tools
 
@@ -134,6 +134,7 @@ I want to create a section that keeps track of players who have played the game 
 - [Gitpod](https://gitpod.io/workspaces)
 - [Balsamiq](https://balsamiq.com/)
 - [W3C HTML & CSS Validation Service](https://validator.w3.org/)
+- [Coolors](https://coolors.co/)
 
 ## Testing of Interactive Elements
 
@@ -143,14 +144,16 @@ Invite the user to play the game using an attractive and fun landing page.
 
 #### Implementation
 
-I used high contrasting colors and a mono font to give that classic arcade feel. Structure is laid out using Bootstrap.
+I used high contrasting colors and a mono font to give that classic arcade feel. Structure is laid out using Bootstrap. The title pops out with a red box and beneath is the introductory "How to Play" section explaining how the game works. This is then followed by the "Lets Play" and "High Scores" buttons colored appropriately to differenciate them. Finally, the footer has the exclamation statement and links to popular social media sites.
 
 #### Test
 
 All style elements appearing as intended. Layout matches wireframe designs.
+
 #### Result
 
 Pass
+
 #### Verdict
 
 Working as intended.
