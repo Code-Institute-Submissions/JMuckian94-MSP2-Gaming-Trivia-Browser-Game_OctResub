@@ -1,6 +1,6 @@
 const apiUrl = 'https://opentdb.com/api.php?amount=20&category=15&type=multiple';
 const question = document.querySelector('#question');
-const options = document.querySelector('.option-text');
+const options = Array.from(document.querySelector('.option-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
@@ -65,10 +65,10 @@ startGame = () => {
 const maximumQuestions = 20;
 
 getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter >= maximumQuestions) {
+    if (availableQuestions.length === 0 || questionCounter >= maximumQuestions) {
         localStorage.setItem('mostRecentScore', score);
-        //go to the end page
-        return window.location.assign('/end.html');
+        //go to the final score page
+        return window.location.assign('/finalscore.html');
     }
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
