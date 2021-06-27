@@ -67,6 +67,12 @@ i {
     background-color: #4381C1;
 }
 
+#intro-title {
+    background-color: #db222a;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
 #question {
     background-color: #db222a;
     border-radius: 0.5rem;
@@ -81,13 +87,13 @@ i {
 #progressBar {
     width: 40rem;
     height: 4rem;
-    border: 0.3rem solid #4381C1;
+    border: 0.5rem solid #4381C1;
     margin: 2rem auto;
     padding: 0;
 }
 
 #progressBarFull {
-    height: 3.4rem;
+    height: 3rem;
     background-color: #4381C1;
 }
 
@@ -96,6 +102,7 @@ i {
     font-size: 5rem;
     text-align: center;
     margin-top: 10rem;
+    color: #4381C1;
 }
 
 #username {
