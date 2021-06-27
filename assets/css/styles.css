@@ -50,15 +50,16 @@ i {
     text-align: center;
 }
 
-
-/* Hiding the intro section */
-.intro-section {
-    display: block;
-}
-
 .letsplay-reset-btn {
     background-color: #4381C1;
 }
+
+.choice-container {
+    font-size: 2rem;
+    border: 0.1rem solid #db222a;
+    background-color: #fff;
+  }
+  
 
 #highscore-btn {
     background-color: #71B340;
@@ -68,6 +69,19 @@ i {
 #optionText {
     background-color: #db222a;
 }
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #4381C1;
+    margin-top: 1.5rem;
+  }
+  
+  #progressBarFull {
+    height: 3.4rem;
+    background-color: #4381C1;
+    width: 0%;
+  }
 
 
 #social-network-links i{

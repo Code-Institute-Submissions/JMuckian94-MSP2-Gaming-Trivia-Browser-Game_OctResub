@@ -1,4 +1,3 @@
-const apiUrl = 'https://opentdb.com/api.php?amount=20&category=15&type=multiple';
 const question = document.querySelector('#question');
 const options = Array.from(document.querySelector('.option-text'));
 const progressText = document.querySelector('#progressText');
@@ -16,8 +15,9 @@ let availableQuestions = [];
 let questions = [];
 
 // Fetches question and answer data from api database
-fetch(apiUrl)
-
+fetch (
+    'https://opentdb.com/api.php?amount=20&category=15&type=multiple'
+)
 .then((res) => {
     return res.json();
 })
@@ -28,10 +28,9 @@ fetch(apiUrl)
         };
 
         const answerOptions = [...loadedQuestion.incorrect_answers];
-        formattedQuestion.answer = Math.floor(Math.random()* 4) + 1;
+        formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
         answerOptions.splice(
-            formattedQuestion.answer - 1,
-            0,
+            formattedQuestion.answer - 1, 0,
             loadedQuestion.correct_answer
         );
 
@@ -43,7 +42,7 @@ fetch(apiUrl)
 
     });
 
-    startGame()
+    startGame();
 
 })
 
@@ -52,6 +51,7 @@ fetch(apiUrl)
 
 });
 
+const maximumQuestions = 20;
 // Start Game Function
 
 startGame = () => {
@@ -62,7 +62,7 @@ startGame = () => {
 }
 
 // Get New Question Function
-const maximumQuestions = 20;
+
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maximumQuestions) {
@@ -71,12 +71,16 @@ getNewQuestion = () => {
         return window.location.assign('/finalscore.html');
     }
     questionCounter++;
+    progressText.innerText = `Question ${questionCounter}/${maximumQuestions}`;
+
+    progressBarFull.style.width = `${(questionCounter / maximumQuestions) * 100}%`;
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
 
     options.forEach((option) => {
-        const number = choice.dataset['number'];
+        const number = option.dataset['number'];
         option.innerText = currentQuestion['option' + number];
     });
 

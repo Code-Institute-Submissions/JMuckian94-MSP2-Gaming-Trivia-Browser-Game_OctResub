@@ -32,8 +32,9 @@
             </div>
             <!-- Button hides intro section and shows game -->
             <div class="col-sm-12 col-md-6">
-                <button id="play-btn" class="letsplay-reset-btn btn btn-lg btn-block" type="button" data-toggle="collapse"
-                    data-target="#intro-section, #game-section, #footer-section" aria-expanded="false" aria-controls="intro-section">
+                <button id="play-btn" class="letsplay-reset-btn btn btn-lg btn-block" data-toggle="collapse"
+                    data-target="#intro-section, #game-section, #footer-section" aria-expanded="false"
+                    aria-controls="intro-section">
                     <h2>Lets Play! <i class="fas fa-gamepad"></i></h2>
                 </button>
             </div>
@@ -44,100 +45,92 @@
                 </button>
             </div>
         </div>
-    </div>
-    <!-- Main Game Container -->
-    <section id="game-section" class="container-fluid common-styles collapse hide">
-        <div class="row">
-            <div class="col-sm-6">
-                <div id="hud">
+        </div>
+        <!-- Main Game Container -->
+        <section id="game-section" class="container-fluid common-styles collapse hide">
+            <div class="row">
+                <div id="hud" class="col-sm-6">
                     <div id="hud-item">
-                        <h2 class="hud-prefix">
+                        <h2 id="progressText" class="hud-prefix">
                             Question
                         </h2>
-                        <h2 class="hud-main-text" id="questionCounter">
-                            1/20
-                        </h2>
+                        <div id="progressBar">
+                            <div id="progressBarFull"></div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div id="hud">
-                    <div id="hud-item">
+                    <div id="hud-item" class="col-sm-6">
                         <h2 class="hud-prefix">
                             Score
                         </h2>
-                        <h2 id="score">
+                        <h2 class="hud-main-text" id="score">
                             0
                         </h2>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-        <div class="col-sm-12 my-5">
-            <div id="question">
-                <h1>What is the answer to this question?</h1>
+            <div class="row">
+                <div id="question" class="col-sm-12 my-5"></div>
             </div>
-        </div>
-    </div>
-    <div class="row my-5">
-            <div class="option-container col-sm-6">
-                <p class="option-prefix">A</p>
-                <input class="option-text btn btn-lg btn-block" data-number="1" type="button" value="Option 1">
-              </div>
-              <div class="option-container col-sm-6">
-                <p class="option-prefix">B</p>
-                <input class="option-text btn btn-lg btn-block" data-number="2" type="button" value="Option 2">
-              </div>
-              <div class="option-container col-sm-6">
-                <p class="option-prefix">C</p>
-                <input class="option-text btn btn-lg btn-block" data-number="3" type="button" value="Option 3">
-              </div>
-              <div class="option-container col-sm-6">
-                <p class="option-prefix">D</p>
-                <input class="option-text btn btn-lg btn-block" data-number="4" type="button" value="Option 4">
-              </div>
-        </div>
-    </div>
-        <div class="row mt-5">
-            <div class="offset-sm-8">
-                <button id="restart-btn" class="letsplay-reset-btn btn" type="button" data-toggle="collapse"
-                    data-target="#intro-section, #game-section, #footer-section" aria-expanded="false" aria-controls="intro-section">
-                    <h2>Restart <i class="fas fa-redo"></i></h2>
-                </button>
+            <div class="row my-5">
+                <div class="option-container col-sm-6">
+                    <p class="option-prefix">A</p>
+                    <button class="option-text btn btn-lg btn-block" data-number="1" type="submit"></button>
+                </div>
+                <div class="option-container col-sm-6">
+                    <p class="option-prefix">B</p>
+                    <button class="option-text btn btn-lg btn-block" data-number="2" type="submit"></button>
+                </div>
+                <div class="option-container col-sm-6">
+                    <p class="option-prefix">C</p>
+                    <button class="option-text btn btn-lg btn-block" data-number="3" type="submit"></button>
+                </div>
+                <div class="option-container col-sm-6">
+                    <p class="option-prefix">D</p>
+                    <button class="option-text btn btn-lg btn-block" data-number="4" type="submit"></button>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- SocialLinks -->
-    <footer id="footer-section" class="container-fluid common-styles collapse show mt-5">
-        <div class="row">
-            <div class="col-sm-12 mb-5">
-                <h2>Challenge your friends!</h2>
             </div>
-        </div>
-        <div id="social-network-links" class="row mt-5">
-            <div class="col-sm-3">
-                <a href="https://www.facebook.com" target="_blank" rel="nopener" aria-label="">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
+            <div class="row mt-5">
+                <div class="offset-sm-8">
+                    <button id="restart-btn" class="letsplay-reset-btn btn" data-toggle="collapse"
+                        data-target="#intro-section, #game-section, #footer-section" aria-expanded="false"
+                        aria-controls="intro-section">
+                        <h2>Restart <i class="fas fa-redo"></i></h2>
+                    </button>
+                </div>
             </div>
-            <div class="col-sm-3">
-                <a href="https://www.twitter.com" target="_blank" rel="nopener" aria-label="">
-                    <i class="fab fa-twitter-square"></i></a>
+        </section>
+        <!-- SocialLinks -->
+        <footer id="footer-section" class="container-fluid common-styles collapse show mt-5">
+            <div class="row">
+                <div class="col-sm-12 mb-5">
+                    <h2>Challenge your friends!</h2>
+                </div>
             </div>
-            <div class="col-sm-3">
-                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" aria-label=""></i></a>
+            <div id="social-network-links" class="row mt-5">
+                <div class="col-sm-3">
+                    <a href="https://www.facebook.com" target="_blank" rel="nopener" aria-label="">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://www.twitter.com" target="_blank" rel="nopener" aria-label="">
+                        <i class="fab fa-twitter-square"></i></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" aria-label=""></i></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"
+                            aria-label=""></i></a>
+                </div>
             </div>
-            <div class="col-sm-3">
-                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-label=""></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        </footer>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
 </body>
 
