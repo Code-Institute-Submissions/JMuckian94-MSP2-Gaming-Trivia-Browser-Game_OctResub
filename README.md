@@ -149,7 +149,8 @@ All style elements appearing as intended. Layout matches wireframe designs.
 
 ### Verdict
 Working as intended.
-<br/>
+
+---
 ### Plan
 Clicking the "Lets Play" button starts the trivia game.
 
@@ -161,7 +162,8 @@ All style elements appearing as intended. Layout matches wireframe designs. "Let
 
 ### Verdict
 Working as intended.
-<br/>
+
+---
 ### Plan
 The game will have 20 questions and mulitple choice answers.
 
@@ -173,7 +175,8 @@ Questions and answers section is populated as intended. Each answer clicked move
 
 ### Verdict
 Working as intended. However, visual feedback needs to be added for user experience.
-<br/>
+
+---
 ### Plan
 The game will notify the player if they have gotten the answer right or wrong
 
@@ -185,7 +188,8 @@ Score increases with right answers. One issue is there is no visual feedback whe
 
 ### Verdict
 Visual feedback will assist the player to know when the answer is wrong or right without having to look at the score counter each time. This will be implemented in future versions of the game.
-<br/>
+
+---
 ### Plan
 The game keeps tabs on how many questions have been asked and answered
 
@@ -197,7 +201,8 @@ Questions being counted by counter successfully. Progress bar working as intende
 
 ### Verdict
 All tested elements working as intended.
-<br/>
+
+---
 ### Plan
 Questions will be randomised for each playthrough.
 
@@ -209,7 +214,8 @@ Played through the game a few times. No duplicate questions have appeared so far
 
 ### Verdict
 Elements working as intended.
-<br/>
+
+---
 ### Plan
 
 ### Implementation
@@ -244,6 +250,7 @@ Any time commits and pushes are sent to Github, the Github Pages site should upd
 ###### 4. Change the working directory to the location where the cloned directory is to go.
 ###### 5. Use the "git clone" command and paste the url copied in the second step.
 
+---
 ## Credits
 
 ### Content / Media
