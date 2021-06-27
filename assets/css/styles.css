@@ -57,7 +57,7 @@ i {
 .option-container {
     font-size: 2rem;
     border: 0.1rem solid #db222a;
-    background-color: #fff;
+    margin: 2rem auto;
   }
 
 .option-text {

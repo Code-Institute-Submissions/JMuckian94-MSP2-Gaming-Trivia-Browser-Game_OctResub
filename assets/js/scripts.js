@@ -1,5 +1,5 @@
 const question = document.querySelector('#question');
-const options = Array.from(document.querySelector('.option-text'));
+const options = Array.from(document.getElementsByClassName('option-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
