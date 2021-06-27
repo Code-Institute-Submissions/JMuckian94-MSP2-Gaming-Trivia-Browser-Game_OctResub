@@ -108,9 +108,10 @@ options.forEach((option) => {
     });
 });
 
-// const toggleGame = (state) => {
-//     showGame ? introSectionRef.classList.add('block'): introSectionRef.classList.add('hidden');
-// }
+incrementScore = (num) => {
+    score += num;
+    scoreText.innerText = score;
+};
 
 // restartBtnRef.addEventListener('click', toggleGame(false));
 // playBtnRef.addEventListener('click', toggleGame(true));
