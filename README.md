@@ -21,7 +21,7 @@ To create a browser based trivia game that challanges the users knowledge of vid
 
 - As a user, I want to be invited to play by an attractive and fun landing page
 - As a user, I want to click a button that starts the trivia game
-- As a user, I want the game to have 20 questions
+- As a user, I want the game to have 20 questions and be multiple choice
 - As a user, I want the game to notify me if I have gotten the answer right or wrong
 - As a user, I want the game to keep tabs on how many questions have been asked and answered
 - As a user, I want a final tally of my score
@@ -138,38 +138,92 @@ I want to implement different messages to appear depending on how well the playe
 
 ## Testing of Interactive Elements
 
-#### Plan
-
+### Plan
 Invite the user to play the game using an attractive and fun landing page.
 
-#### Implementation
-
+### Implementation
 I used high contrasting colors and a mono font to give that classic arcade feel. Structure is laid out using Bootstrap. The title pops out with a red box and beneath is the introductory "How to Play" section explaining how the game works. This is then followed by the "Lets Play" and "High Scores" buttons colored appropriately to differenciate them. Finally, the footer has the exclamation statement and links to popular social media sites.
 
-#### Test
-
+### Test
 All style elements appearing as intended. Layout matches wireframe designs.
 
-#### Result
-
-Pass
-
-#### Verdict
-
+### Verdict
 Working as intended.
 
-- As a user, I want to be invited to play by an attractive and fun landing page
-- 
-- As a user, I want to click a button that starts the trivia game
-- As a user, I want the game to have 20 questions
-- As a user, I want the game to notify me if I have gotten the answer right or wrong
-- As a user, I want the game to keep tabs on how many questions have been asked and answered
-- As a user, I want a final tally of my score
-- As a user, I want to see some kind of leaderboard functionality
-- As a user, I want randomly selected questions to be pulled from a database to improve replayability
-- As a user, I want the user interface to be bug free and easy to navigate
+### Plan
+Clicking the "Lets Play" button starts the trivia game.
 
-### Bugs
+### Implementation
+Bootstrap elements were used to link the buttons with different sections of the page. When the page is fisrt loaded up the game is loaded to, however, it is hidden from view until the user clicks the "Lets Play" button. The game then trades places with the intro section and the footer, becoming the only thing on screen. The ".collapsing" class was edited to remove visual errors when transitioning.
+
+### Test
+All style elements appearing as intended. Layout matches wireframe designs. "Lets Play" button working as intended. All elements hiding/showing as intended.
+
+### Verdict
+Working as intended.
+
+### Plan
+The game will have 20 questions and mulitple choice answers.
+
+### Implementation
+I used the opentdb api to populate the questions and answers section of my trivia game. I simply had to go onto the website and choose how many questions I want, the topic, the difficulty (of which I picked any), and if I want multiple choice. The website then generates the API url which I then fetch using JSON. From the JSON file I extract the data I need to populate the question and answer section.
+
+### Test
+Questions and answers section is populated as intended. Each answer clicked moves the player to the next question. API data is being used by the program as intended.
+
+### Verdict
+Working as intended. However, visual feedback needs to be added for user experience.
+
+### Plan
+The game will notify the player if they have gotten the answer right or wrong
+
+### Implementation
+I programmed the game to randomise the order the answers appear and to know which answers are correct/incorrect, based on the JSON file data, and to keep score for the player.
+
+### Test
+Score increases with right answers. One issue is there is no visual feedback whether the answer was right or wrong other than the score counter.
+
+### Verdict
+Visual feedback will assist the player to know when the answer is wrong or right without having to look at the score counter each time. This will be implemented in future versions of the game.
+
+### Plan
+The game keeps tabs on how many questions have been asked and answered
+
+### Implementation
+The game keeps track of how many questions have been asked and answered using the getNewQuestion() function. This function will keep tabs on the number of questions asked, incrementing a "Question 1/20" progress text section of the game as well as a progress bar to give the user feedback on how they are progressing through the game. Once 20 questions have been answered the game will pass the player to the finalscore screen where they can see their final score and enter in a username to be saved.
+
+### Test
+Questions being counted by counter successfully. Progress bar working as intended. Game finishes on last question answered as intended.
+
+### Verdict
+All tested elements working as intended.
+
+### Plan
+Questions will be randomised for each playthrough.
+
+### Implementation
+In the getNewQuestion function I have include a Math.floor(Math.random) object to select data at random from the API's JSON file so that each time the game is loaded the questions will appear in a different order. It will also keep track of which questions have already been asked so that the same question wont appear twice. 
+
+### Test
+Played through the game a few times. No duplicate questions have appeared so far. The game cannot be brute forced by playing multiple times. The players knowledge is being tested as intended.
+
+### Verdict
+Elements working as intended.
+
+### Plan
+
+### Implementation
+
+### Test
+
+### Verdict
+### Plan
+
+### Implementation
+
+### Test
+
+### Verdict
 
 ## Deployment
 
@@ -193,66 +247,15 @@ Any time commits and pushes are sent to Github, the Github Pages site should upd
 ## Credits
 
 ### Content / Media
+Open Trivia DB is created and maintained by the good folks at [PIXELTAIL GAMES LLC](https://www.pixeltailgames.com/). Huge credit to them for creating a very user-friendly API. My game would have been more tedious to play and to create if not for them.
+
+A big thanks to the [Bootstrap team](https://getbootstrap.com/docs/5.0/about/team/). The screen scaling grid system that Bootstrap provides really cuts out a lot of headaches for scaling content to each individual screen size and has been a huge help to me in the projects I have worked on so far.
+
+Also, a thank you to the guys at [FontAwesome](https://fontawesome.com/) for providing great icons free to use. These have really helped visually enhance my projects.
 
 ### Acknowledgements
 
+I want to thank and give credit to [James Q Quick](https://github.com/jamesqquick) for his helpful tutorial walkthrough on how to create a quiz app. All his videos are available for free on [YouTube](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw). I couldn't have completed this project in time without his contribution to the coding community. 
 
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+I also want to give thanks to [Simen Daehlin](https://github.com/Eventyret/eventyret/commits?author=Eventyret) for taking the time to explore key concepts with me and review my work, providing the valuable feedback I needed to produce a grade worthy project.
 
-Welcome JMuckian94,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
