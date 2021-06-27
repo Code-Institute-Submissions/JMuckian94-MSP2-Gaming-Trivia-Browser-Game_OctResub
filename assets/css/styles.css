@@ -59,6 +59,11 @@ i {
     border: 0.1rem solid #db222a;
     background-color: #fff;
   }
+
+.option-text {
+    font-size: 4rem;
+    background-color: #4381C1;
+}
   
 
 #highscore-btn {

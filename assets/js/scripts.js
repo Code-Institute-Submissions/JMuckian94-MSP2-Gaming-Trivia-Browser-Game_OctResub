@@ -117,5 +117,4 @@ incrementScore = (num) => {
     scoreText.innerText = score;
 };
 
-// restartBtnRef.addEventListener('click', toggleGame(false));
-// playBtnRef.addEventListener('click', toggleGame(true));
+// restartBtnRef.addEventListener('click', startGame());
