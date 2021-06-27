@@ -15,41 +15,48 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                
+                <h1 id="finalScore"></h1>
+                <form>
+                    <input type="text" name="username" id="username" placeholder="username" />
+                    <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+                        Save
+                    </button>
+                </form>
+                <button class="btn" href="/index.html">Play Again!</button>
             </div>
         </div>
     </div>
-        <!-- SocialLinks -->
-        <footer id="footer-section" class="container-fluid common-styles collapse show mt-5">
-            <div class="row">
-                <div class="col-sm-12 mb-5">
-                    <h2>Challenge your friends!</h2>
-                </div>
+    <!-- SocialLinks -->
+    <footer id="footer-section" class="container-fluid common-styles collapse show mt-5">
+        <div class="row">
+            <div class="col-sm-12 mb-5">
+                <h2>Challenge your friends!</h2>
             </div>
-            <div id="social-network-links" class="row mt-5">
-                <div class="col-sm-3">
-                    <a href="https://www.facebook.com" target="_blank" rel="nopener" aria-label="">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="https://www.twitter.com" target="_blank" rel="nopener" aria-label="">
-                        <i class="fab fa-twitter-square"></i></a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" aria-label=""></i></a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"
-                            aria-label=""></i></a>
-                </div>
+        </div>
+        <div id="social-network-links" class="row mt-5">
+            <div class="col-sm-3">
+                <a href="https://www.facebook.com" target="_blank" rel="nopener" aria-label="">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
             </div>
-        </footer>
+            <div class="col-sm-3">
+                <a href="https://www.twitter.com" target="_blank" rel="nopener" aria-label="">
+                    <i class="fab fa-twitter-square"></i></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" aria-label=""></i></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-label=""></i></a>
+            </div>
+        </div>
+    </footer>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-        <script src="assets/js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
 </body>
 

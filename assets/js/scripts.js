@@ -3,8 +3,6 @@ const options = Array.from(document.getElementsByClassName('option-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
-const playBtnRef = document.querySelector ('#play-btn');
-const restartBtnRef = document.querySelector('#restart-btn');
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -71,17 +69,17 @@ getNewQuestion = () => {
         return window.location.assign('/finalscore.html');
     }
     questionCounter++;
-    progressText.innerText = `Question ${questionCounter}/${maximumQuestions}`;
+    progressText.innerHTML = `Question ${questionCounter}/${maximumQuestions}`;
 
     progressBarFull.style.width = `${(questionCounter / maximumQuestions) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
+    question.innerHTML = currentQuestion.question;
 
     options.forEach((option) => {
         const number = option.dataset['number'];
-        option.innerText = currentQuestion['option' + number];
+        option.innerHTML = currentQuestion['option' + number];
     });
 
     availableQuestions.splice(questionIndex, 1);
@@ -116,5 +114,3 @@ incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
 };
-
-// restartBtnRef.addEventListener('click', startGame());

@@ -56,13 +56,14 @@ i {
 
 .option-container {
     font-size: 2rem;
-    border: 0.1rem solid #db222a;
+    background-color: #4381C1;
     margin: 2rem auto;
+    border-radius: 1rem;
   }
 
 .option-text {
     font-size: 4rem;
-    background-color: #4381C1;
+    background-color: #db222a;
 }
   
 
@@ -79,13 +80,13 @@ i {
     width: 40rem;
     height: 4rem;
     border: 0.3rem solid #4381C1;
-    margin-top: 1.5rem;
+    margin: 2rem auto;
+    padding: 0;
   }
   
   #progressBarFull {
     height: 3.4rem;
     background-color: #4381C1;
-    width: 0%;
   }
 
 
