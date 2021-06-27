@@ -84,9 +84,29 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
-// choices.forEach((choice) => {
-//     choice.addEventListener('click' )
-// })
+options.forEach((option) => {
+    option.addEventListener('click', (e) => {
+        if (!acceptingAnswers) return;
+
+        acceptingAnswers = false;
+        const selectedOption = e.target;
+        const selectedAnswer = selectedOption.dataset['number'];
+
+        const classToApply =
+            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+        if (classToApply === 'correct') {
+            incrementScore(1);
+        }
+
+        selectedOption.parentElement.classList.add(classToApply);
+
+        setTimeout(() => {
+            selectedOption.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 1000);
+    });
+});
 
 // const toggleGame = (state) => {
 //     showGame ? introSectionRef.classList.add('block'): introSectionRef.classList.add('hidden');
