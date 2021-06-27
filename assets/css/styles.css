@@ -54,7 +54,7 @@ i {
     background-color: #4381C1;
 }
 
-.choice-container {
+.option-container {
     font-size: 2rem;
     border: 0.1rem solid #db222a;
     background-color: #fff;
@@ -71,7 +71,7 @@ i {
 }
 
 #progressBar {
-    width: 20rem;
+    width: 40rem;
     height: 4rem;
     border: 0.3rem solid #4381C1;
     margin-top: 1.5rem;
