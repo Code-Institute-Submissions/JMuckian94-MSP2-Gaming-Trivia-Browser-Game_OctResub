@@ -13,16 +13,21 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1 id="finalScore"></h1>
-                <form>
-                    <input type="text" name="username" id="username" placeholder="username" />
-                    <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
-                        Save
+        <div class="row common-styles">
+            <div class="col-sm-12">
+                <h1>Congrats!</h1>
+            </div>
+            <div class="col-sm-12">
+                <form id>
+                    <input type="text" name="username" id="username" placeholder="Enter a username!" />
+                    <button type="submit" id="save-btn" class="btn-sm" onclick="saveHighScore(event)">
+                        <p>Save</p>
                     </button>
                 </form>
-                <button class="btn" href="/index.html">Play Again!</button>
+            </div>
+                <button class="HUD-btn btn" type="button" onclick="location.href='/index.html';">
+                    <h2>Play Again!</h2>
+                </button>
             </div>
         </div>
     </div>
@@ -53,9 +58,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
-        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="assets/js/finalscore.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
 </body>

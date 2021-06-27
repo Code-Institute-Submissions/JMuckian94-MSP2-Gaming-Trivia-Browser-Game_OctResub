@@ -50,7 +50,7 @@ i {
     text-align: center;
 }
 
-.letsplay-reset-btn {
+.HUD-btn {
     background-color: #4381C1;
 }
 
@@ -93,4 +93,14 @@ i {
 #social-network-links i{
     font-size: 7.5rem;
     text-align: center;
+}
+
+#username {
+    height: 6.5rem;
+    border-radius: 0.3rem;
+}
+
+#save-btn {
+    background-color: #71B340;
+    padding-bottom: 0;
 }
