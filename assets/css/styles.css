@@ -36,10 +36,6 @@ i {
     font-size: 4rem;
 }
 
-blockquote {
-    font-weight: bold;
-}
-
 .collapsing {
     transition: 0ms;
 }
