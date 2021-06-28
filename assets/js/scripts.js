@@ -13,85 +13,87 @@ let questionCounter = 0;
 
 // Fetches question and answer data from api database
 fetch("https://opentdb.com/api.php?amount=20&category=15&type=multiple")
-.then((res) => {return res.json();})
-.then((loadedQuestions) => {
-    questions = loadedQuestions.results.map((loadedQuestion) => {
-        const formattedQuestion = {
-            question: loadedQuestion.question};
-        const answerOptions = [...loadedQuestion.incorrect_answers];
-        formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
-        answerOptions.splice(
-            formattedQuestion.answer - 1, 0,
-            loadedQuestion.correct_answer
-        );
-        answerOptions.forEach((option, index) => {
-            formattedQuestion['option' + (index + 1)] = option;
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedQuestions) => {
+        questions = loadedQuestions.results.map((loadedQuestion) => {
+            const formattedQuestion = {
+                question: loadedQuestion.question
+            };
+            const answerOptions = [...loadedQuestion.incorrect_answers];
+            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+            answerOptions.splice(
+                formattedQuestion.answer - 1, 0,
+                loadedQuestion.correct_answer
+            );
+            answerOptions.forEach((option, index) => {
+                formattedQuestion['option' + (index + 1)] = option;
+            });
+            return formattedQuestion;
         });
-        return formattedQuestion;
-    });
-    startGame();
-})
+        startGame();
+    })
 
 const maximumQuestions = 20;
 // Start Game Function
 
 const startGame = () => {
-questionCounter = 0;
-score = 0;
-availableQuestions = [...questions];
-getNewQuestion();
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
 };
 // Get New Question Function
 const getNewQuestion = () => {
-	if (availableQuestions.length === 0 || questionCounter >= maximumQuestions) {
-		localStorage.setItem('mostRecentScore', score);
-		//go to the final score page
-		return window.location.assign('/finalscore.html');
-	}
-	questionCounter++;
-	progressText.innerHTML = `Question ${questionCounter}/${maximumQuestions}`;
+    if (availableQuestions.length === 0 || questionCounter >= maximumQuestions) {
+        localStorage.setItem('mostRecentScore', score);
+        //go to the final score page
+        return window.location.assign('/finalscore.html');
+    }
+    questionCounter++;
+    progressText.innerHTML = `Question ${questionCounter}/${maximumQuestions}`;
 
-	progressBarFull.style.width = `${(questionCounter / maximumQuestions) * 100}%`;
+    progressBarFull.style.width = `${(questionCounter / maximumQuestions) * 100}%`;
 
-	const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-	currentQuestion = availableQuestions[questionIndex];
-	question.innerHTML = currentQuestion.question;
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerHTML = currentQuestion.question;
 
-	options.forEach((option) => {
-		const number = option.dataset.number;
-		option.innerHTML = currentQuestion['option' + number];
-	});
+    options.forEach((option) => {
+        const number = option.dataset.number;
+        option.innerHTML = currentQuestion['option' + number];
+    });
 
-	availableQuestions.splice(questionIndex, 1);
-	acceptingAnswers = true;
+    availableQuestions.splice(questionIndex, 1);
+    acceptingAnswers = true;
 };
 
 options.forEach((option) => {
-	option.addEventListener('click', (e) => {
-		if (!acceptingAnswers) {
+    option.addEventListener('click', (e) => {
+        if (!acceptingAnswers);
 
-			acceptingAnswers = false;
-			const selectedOption = e.target;
-			const selectedAnswer = selectedOption.dataset.number;
+        acceptingAnswers = false;
+        const selectedOption = e.target;
+        const selectedAnswer = selectedOption.dataset.number;
 
-			const classToApply =
-				selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        const classToApply =
+            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-			if (classToApply === 'correct') {
-				incrementScore(1);
-			}
+        if (classToApply === 'correct') {
+            incrementScore(1);
+        }
 
-			selectedOption.parentElement.classList.add(classToApply);
+        selectedOption.parentElement.classList.add(classToApply);
 
-			setTimeout(() => {
-				selectedOption.parentElement.classList.remove(classToApply);
-				getNewQuestion();
-			}, 1000);
-		}
-	});
+        setTimeout(() => {
+            selectedOption.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 1000);
+    });
 });
 
 const incrementScore = (num) => {
-	score += num;
-	scoreText.innerText = score;
+    score += num;
+    scoreText.innerText = score;
 };
