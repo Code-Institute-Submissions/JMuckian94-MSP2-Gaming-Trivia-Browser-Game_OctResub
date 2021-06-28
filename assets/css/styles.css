@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     border: 0;
-
+    text-decoration: none;
 }
 
 html {
@@ -66,6 +66,10 @@ i {
 .option-text {
     font-size: 4rem;
     background-color: #4381C1;
+}
+
+.accordian {
+    overflow-anchor: none;
 }
 
 #intro-title {
