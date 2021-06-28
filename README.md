@@ -219,21 +219,18 @@ Elements working as intended.
 
 ---
 ### Plan
+Create a high scores page.
 
 ### Implementation
+Due to time constraints, the high scores page was not implemented in time for project submission.
 
 ### Test
+Failed
 
 ### Verdict
-### Plan
+Implement earlier in development faze for future projects.
 
-### Implementation
 
-### Test
-
-### Verdict
-
-## Deployment
 
 This project was deployed via GitHub by executing the following steps. After writing the code, committing and pushing it to GitHub:
 
