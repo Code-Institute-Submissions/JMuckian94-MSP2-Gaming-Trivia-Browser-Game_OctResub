@@ -4,6 +4,81 @@
 To create a browser based trivia game that challanges the users knowledge of video games, keeps record of the score, and is responsive on all media viewport widths. This game should be attractive to look at, easy to navigate, simple to control, and of course fun to play. The browser game will be built using HTML, CSS, and Javascript code. This project will also make use of the opentdb.com API and Bootstrap framework.
 
 ## Table of Contents
+- [Gaming Trivia](#gaming-trivia)
+  * [Project Objective](#project-objective)
+  * [Table of Contents](#table-of-contents)
+  * [UX](#ux)
+    + [Website Design Goals](#website-design-goals)
+    + [User Stories](#user-stories)
+    + [User Requirements and Expectations](#user-requirements-and-expectations)
+      - [Requirements](#requirements)
+      - [Expectations](#expectations)
+    + [Design Choices](#design-choices)
+      - [Fonts](#fonts)
+      - [Icons](#icons)
+      - [Colors](#colors)
+      - [Structure](#structure)
+  * [Wireframes](#wireframes)
+    + [[Desktop Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/desktop-wireframes)](#-desktop-wireframe-folder--https---githubcom-jmuckian94-msp2-gaming-trivia-browser-game-tree-master-wireframes-desktop-wireframes-)
+    + [[Tablet Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/tablet-wireframes)](#-tablet-wireframe-folder--https---githubcom-jmuckian94-msp2-gaming-trivia-browser-game-tree-master-wireframes-tablet-wireframes-)
+    + [[Mobile Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/mobile-wireframes)](#-mobile-wireframe-folder--https---githubcom-jmuckian94-msp2-gaming-trivia-browser-game-tree-master-wireframes-mobile-wireframes-)
+  * [Features](#features)
+    + [Intro Section](#intro-section)
+    + [Lets Play/High Scores Buttons](#lets-play-high-scores-buttons)
+    + [Game Section](#game-section)
+    + [Final Scores Section](#final-scores-section)
+  * [Features to be Implemented](#features-to-be-implemented)
+    + [Timer](#timer)
+    + [Right / Wrong Feedback](#right---wrong-feedback)
+    + [Different Final Score Responces](#different-final-score-responces)
+  * [Technologies Used](#technologies-used)
+    + [Languages](#languages)
+    + [Framworks & External Liberaries](#framworks---external-liberaries)
+    + [Tools](#tools)
+  * [Testing of Interactive Elements](#testing-of-interactive-elements)
+    + [Plan](#plan)
+    + [Implementation](#implementation)
+    + [Test](#test)
+    + [Verdict](#verdict)
+    + [Plan](#plan-1)
+    + [Implementation](#implementation-1)
+    + [Test](#test-1)
+    + [Verdict](#verdict-1)
+    + [Plan](#plan-2)
+    + [Implementation](#implementation-2)
+    + [Test](#test-2)
+    + [Verdict](#verdict-2)
+    + [Plan](#plan-3)
+    + [Implementation](#implementation-3)
+    + [Test](#test-3)
+    + [Verdict](#verdict-3)
+    + [Plan](#plan-4)
+    + [Implementation](#implementation-4)
+    + [Test](#test-4)
+    + [Verdict](#verdict-4)
+    + [Plan](#plan-5)
+    + [Implementation](#implementation-5)
+    + [Test](#test-5)
+    + [Verdict](#verdict-5)
+    + [Plan](#plan-6)
+    + [Implementation](#implementation-6)
+    + [Test](#test-6)
+    + [Verdict](#verdict-6)
+  * [Deployment](#deployment)
+          + [1. Navigate to the repository on github and click Settings.](#1-navigate-to-the-repository-on-github-and-click-settings)
+          + [2. From there, go to the Source section within the Github Pages section.](#2-from-there--go-to-the-source-section-within-the-github-pages-section)
+          + [3. Select master branch on the dropdown menu, and click save.](#3-select-master-branch-on-the-dropdown-menu--and-click-save)
+          + [4. Now the website is live.](#4-now-the-website-is-live)
+    + [To run the project locally:](#to-run-the-project-locally-)
+          + [1. Fork the repository to your GitHub account.](#1-fork-the-repository-to-your-github-account)
+          + [2. Choose a local folder for the cloned files.](#2-choose-a-local-folder-for-the-cloned-files)
+          + [3. Clone the repository to your local machine.](#3-clone-the-repository-to-your-local-machine)
+          + [4. Configure the upstream remote value.](#4-configure-the-upstream-remote-value)
+  * [Credits](#credits)
+    + [Content / Media](#content---media)
+    + [Acknowledgements](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## UX
 
@@ -230,7 +305,7 @@ Failed
 ### Verdict
 Implement earlier in development faze for future projects.
 
-
+## Deployment
 
 This project was deployed via GitHub by executing the following steps. After writing the code, committing and pushing it to GitHub:
 
@@ -243,11 +318,10 @@ Any time commits and pushes are sent to Github, the Github Pages site should upd
 
 ### To run the project locally:
 
-###### 1. Click the green Clone or Download button on the Github Repository
-###### 2. Using the Clone with HTTPS option, copy the link displayed.
-###### 3. Open your IDE, and ensure the Git Terminal is open.
-###### 4. Change the working directory to the location where the cloned directory is to go.
-###### 5. Use the "git clone" command and paste the url copied in the second step.
+###### 1. Fork the repository to your GitHub account.
+###### 2. Choose a local folder for the cloned files.
+###### 3. Clone the repository to your local machine.
+###### 4. Configure the upstream remote value.
 
 ---
 ## Credits
