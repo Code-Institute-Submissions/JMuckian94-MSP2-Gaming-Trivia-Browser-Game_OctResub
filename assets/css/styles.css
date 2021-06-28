@@ -36,6 +36,10 @@ i {
     font-size: 4rem;
 }
 
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
 .collapsing {
     transition: 0ms;
 }

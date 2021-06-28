@@ -13,25 +13,11 @@ let questionCounter = 0;
 
 // Fetches question and answer data from api database
 fetch("https://opentdb.com/api.php?amount=20&category=15&type=multiple")
-	.then((res) => res.json())
-    .then((loadedQuestions) => formattedQuestions(loadedQuestions))
-    .then(() => startGame())
-    .catch((err) => {
-        console.error(err);
-    });
-// Start Game Function
-const startGame = () => {
-    questionCounter = 0;
-    score = 0;
-    availableQuestions = [...questions];
-    getNewQuestion();
-};
-
-const formattedQuestions = (loadedQuestions) => {
+.then((res) => {return res.json();})
+.then((loadedQuestions) => {
     questions = loadedQuestions.results.map((loadedQuestion) => {
         const formattedQuestion = {
-            question: loadedQuestion.question
-        };
+            question: loadedQuestion.question};
         const answerOptions = [...loadedQuestion.incorrect_answers];
         formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
         answerOptions.splice(
@@ -43,9 +29,18 @@ const formattedQuestions = (loadedQuestions) => {
         });
         return formattedQuestion;
     });
-startGame();
-};
+    startGame();
+})
+
 const maximumQuestions = 20;
+// Start Game Function
+
+const startGame = () => {
+questionCounter = 0;
+score = 0;
+availableQuestions = [...questions];
+getNewQuestion();
+};
 // Get New Question Function
 const getNewQuestion = () => {
 	if (availableQuestions.length === 0 || questionCounter >= maximumQuestions) {
