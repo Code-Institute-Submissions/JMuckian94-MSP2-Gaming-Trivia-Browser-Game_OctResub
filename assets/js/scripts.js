@@ -12,6 +12,8 @@ let score = 0;
 let questionCounter = 0;
 
 // Fetches question and answer data from api database
+//Author : jamesqquick
+
 fetch("https://opentdb.com/api.php?amount=20&category=15&type=multiple")
     .then((res) => {
         return res.json();
@@ -36,8 +38,8 @@ fetch("https://opentdb.com/api.php?amount=20&category=15&type=multiple")
     })
 
 const maximumQuestions = 20;
-// Start Game Function
 
+// Start Game Function
 const startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -68,6 +70,9 @@ const getNewQuestion = () => {
     availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
 };
+
+// Chooses the options for the player to choose from
+// Author: jamesqquick, modified for my own purposes
 
 options.forEach((option) => {
     option.addEventListener('click', (e) => {

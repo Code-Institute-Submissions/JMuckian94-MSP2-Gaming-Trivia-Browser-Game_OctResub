@@ -13,6 +13,7 @@ username.addEventListener('keyup', () => {
 	saveScoreBtn.disabled = !username.value;
 });
 
+// Author: jamesqquick
 const saveHighScore = (e) => {
 	e.preventDefault();
 
