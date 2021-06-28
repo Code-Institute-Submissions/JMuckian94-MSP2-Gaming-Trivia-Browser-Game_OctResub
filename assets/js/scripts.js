@@ -5,62 +5,48 @@ const scoreText = document.querySelector("#score");
 const progressBarFull = document.querySelector("#progressBarFull");
 
 let currentQuestion = {};
+let availableQuestions = [];
+let questions = [];
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
-let availableQuestions = [];
-
-let questions = [];
 
 // Fetches question and answer data from api database
-fetch(
-		"https://opentdb.com/api.php?amount=20&category=15&type=multiple"
-	)
-	.then((res) => {
-		return res.json();
-	})
-	.then((loadedQuestions) => {
-		questions = loadedQuestions.results.map((loadedQuestion) => {
-			const formattedQuestion = {
-				question: loadedQuestion.question
-			};
-
-			const answerOptions = [...loadedQuestion.incorrect_answers];
-			formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
-			answerOptions.splice(
-				formattedQuestion.answer - 1, 0,
-				loadedQuestion.correct_answer
-			);
-
-			answerOptions.forEach((option, index) => {
-				formattedQuestion['option' + (index + 1)] = option;
-			});
-
-			return formattedQuestion;
-
-		});
-
-		startGame();
-
-	})
-
-.catch((err) => {
-	console.error(err);
-});
-
-const maximumQuestions = 20;
+fetch("https://opentdb.com/api.php?amount=20&category=15&type=multiple")
+	.then((res) => res.json())
+    .then((loadedQuestions) => formattedQuestions(loadedQuestions))
+    .then(() => startGame())
+    .catch((err) => {
+        console.error(err);
+    });
 // Start Game Function
-
 const startGame = () => {
-	questionCounter = 0;
-	score = 0;
-	availableQuestions = [...questions];
-	getNewQuestion();
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
 };
 
+const formattedQuestions = (loadedQuestions) => {
+    questions = loadedQuestions.results.map((loadedQuestion) => {
+        const formattedQuestion = {
+            question: loadedQuestion.question
+        };
+        const answerOptions = [...loadedQuestion.incorrect_answers];
+        formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+        answerOptions.splice(
+            formattedQuestion.answer - 1, 0,
+            loadedQuestion.correct_answer
+        );
+        answerOptions.forEach((option, index) => {
+            formattedQuestion['option' + (index + 1)] = option;
+        });
+        return formattedQuestion;
+    });
+startGame();
+};
+const maximumQuestions = 20;
 // Get New Question Function
-
-
 const getNewQuestion = () => {
 	if (availableQuestions.length === 0 || questionCounter >= maximumQuestions) {
 		localStorage.setItem('mostRecentScore', score);
