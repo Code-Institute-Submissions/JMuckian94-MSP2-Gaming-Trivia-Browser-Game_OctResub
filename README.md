@@ -1,7 +1,5 @@
 # Gaming Trivia
 
-![Device Mockups]()
-
 ## Project Objective
 To create a browser based trivia game that challanges the users knowledge of video games, keeps record of the score, and is responsive on all media viewport widths. This game should be attractive to look at, easy to navigate, simple to control, and of course fun to play. The browser game will be built using HTML, CSS, and Javascript code. This project will also make use of the opentdb.com API and Bootstrap framework.
 
@@ -96,7 +94,11 @@ These buttons will control css operations to hide the intro section and show the
 
 ### Game Section
 
-The game section will fetch data from opentdb.com's database in order to populate the question and answer area. I have created js functions to randomise the answers for each question and opentdb keeps track of the number of questions answered. A progress bar will also provide visual feedback to the user to see how many question are left.
+The game section will fetch data from opentdb.com's database in order to populate the question and answer area. I have created js functions to randomise the answers for each question and opentdb keeps track of the number of questions answered. For the player, A progress bar and question counter will provide visual feedback to the user to see how many question are left. The players score will also appear in a counter in the HUD section. Each time the player answers a question it will move onto the next question and the HUD elements will update accordingly. Players also have the option to restart the game should they choose by clicking a button beneath the game answer area.
+
+### Final Scores Section
+
+Once the game concludes the player is brought to the end game page where they are notified of how many answers they got right. It then provides a form box for the player to enter a username. The "Save" button wont function until an input has been made into the form. The social media links and challenge statements also return to encourage users to share the game with friends.
 
 ## Features to be Implemented
 
