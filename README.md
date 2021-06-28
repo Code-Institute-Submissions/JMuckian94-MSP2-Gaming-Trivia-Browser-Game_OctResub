@@ -19,9 +19,6 @@ To create a browser based trivia game that challanges the users knowledge of vid
       - [Colors](#colors)
       - [Structure](#structure)
   * [Wireframes](#wireframes)
-    + [[Desktop Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/desktop-wireframes)](#-desktop-wireframe-folder--https---githubcom-jmuckian94-msp2-gaming-trivia-browser-game-tree-master-wireframes-desktop-wireframes-)
-    + [[Tablet Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/tablet-wireframes)](#-tablet-wireframe-folder--https---githubcom-jmuckian94-msp2-gaming-trivia-browser-game-tree-master-wireframes-tablet-wireframes-)
-    + [[Mobile Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/mobile-wireframes)](#-mobile-wireframe-folder--https---githubcom-jmuckian94-msp2-gaming-trivia-browser-game-tree-master-wireframes-mobile-wireframes-)
   * [Features](#features)
     + [Intro Section](#intro-section)
     + [Lets Play/High Scores Buttons](#lets-play-high-scores-buttons)
@@ -36,44 +33,14 @@ To create a browser based trivia game that challanges the users knowledge of vid
     + [Framworks & External Liberaries](#framworks---external-liberaries)
     + [Tools](#tools)
   * [Testing of Interactive Elements](#testing-of-interactive-elements)
-    + [Plan](#plan)
-    + [Implementation](#implementation)
-    + [Test](#test)
-    + [Verdict](#verdict)
-    + [Plan](#plan-1)
-    + [Implementation](#implementation-1)
-    + [Test](#test-1)
-    + [Verdict](#verdict-1)
-    + [Plan](#plan-2)
-    + [Implementation](#implementation-2)
-    + [Test](#test-2)
-    + [Verdict](#verdict-2)
-    + [Plan](#plan-3)
-    + [Implementation](#implementation-3)
-    + [Test](#test-3)
-    + [Verdict](#verdict-3)
-    + [Plan](#plan-4)
-    + [Implementation](#implementation-4)
-    + [Test](#test-4)
-    + [Verdict](#verdict-4)
-    + [Plan](#plan-5)
-    + [Implementation](#implementation-5)
-    + [Test](#test-5)
-    + [Verdict](#verdict-5)
-    + [Plan](#plan-6)
-    + [Implementation](#implementation-6)
-    + [Test](#test-6)
-    + [Verdict](#verdict-6)
+    + [Test 1](#plan)
+    + [Test 2](#plan-1)
+    + [Test 3](#plan-2)
+    + [Test 4](#plan-3)
+    + [Test 5](#plan-4)
+    + [Test 6](#plan-5)
+    + [Test 7](#plan-6)
   * [Deployment](#deployment)
-          + [1. Navigate to the repository on github and click Settings.](#1-navigate-to-the-repository-on-github-and-click-settings)
-          + [2. From there, go to the Source section within the Github Pages section.](#2-from-there--go-to-the-source-section-within-the-github-pages-section)
-          + [3. Select master branch on the dropdown menu, and click save.](#3-select-master-branch-on-the-dropdown-menu--and-click-save)
-          + [4. Now the website is live.](#4-now-the-website-is-live)
-    + [To run the project locally:](#to-run-the-project-locally-)
-          + [1. Fork the repository to your GitHub account.](#1-fork-the-repository-to-your-github-account)
-          + [2. Choose a local folder for the cloned files.](#2-choose-a-local-folder-for-the-cloned-files)
-          + [3. Clone the repository to your local machine.](#3-clone-the-repository-to-your-local-machine)
-          + [4. Configure the upstream remote value.](#4-configure-the-upstream-remote-value)
   * [Credits](#credits)
     + [Content / Media](#content---media)
     + [Acknowledgements](#acknowledgements)
@@ -309,19 +276,19 @@ Implement earlier in development faze for future projects.
 
 This project was deployed via GitHub by executing the following steps. After writing the code, committing and pushing it to GitHub:
 
-###### 1. Navigate to the repository on github and click Settings.
-###### 2. From there, go to the Source section within the Github Pages section.
-###### 3. Select master branch on the dropdown menu, and click save.
-###### 4. Now the website is live.
+##### 1. Navigate to the repository on github and click Settings.
+##### 2. From there, go to the Source section within the Github Pages section.
+##### 3. Select master branch on the dropdown menu, and click save.
+##### 4. Now the website is live.
 
 Any time commits and pushes are sent to Github, the Github Pages site should update shortly after.
 
 ### To run the project locally:
 
-###### 1. Fork the repository to your GitHub account.
-###### 2. Choose a local folder for the cloned files.
-###### 3. Clone the repository to your local machine.
-###### 4. Configure the upstream remote value.
+##### 1. Fork the repository to your GitHub account.
+##### 2. Choose a local folder for the cloned files.
+##### 3. Clone the repository to your local machine.
+##### 4. Configure the upstream remote value.
 
 ---
 ## Credits
