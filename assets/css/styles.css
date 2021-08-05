@@ -54,7 +54,7 @@ i {
 }
 
 .HUD-btn {
-    background-color: #71B340;
+    background-color: #4381C1;
     font-size: 4rem;
 }
 
@@ -71,8 +71,16 @@ i {
 }
 
 .option-text:hover {
-    background-color: #0099ff;
+    background-color: #438cff;
     transition: 1000ms;
+}
+
+.correct {
+    background-color: #71B340;
+}
+
+.incorrect {
+    background-color: #db222a;
 }
 
 #intro-background {
@@ -98,17 +106,17 @@ i {
 }
 
 #friends {
-    background-color: #4381C1;
+    background-color: #111111;
     border-radius: 0.5rem;
     margin-top: 2rem;
     padding: 2rem;
-    color: #111111;
+    color: #fff;
 }
 
 #question {
     background-color: #db222a;
     border-radius: 0.5rem;
-    padding: 2rem;
+    padding: 4rem;
     font-size: 3rem;
 }
 

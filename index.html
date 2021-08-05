@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
     <div id="intro-background">
-    <section id="intro-section" class="container-fluid common-styles row collapse show">
+        <section id="intro-section" class="container-fluid common-styles row collapse show">
             <!--Introductory Div-->
             <div class="col-sm-12 mb-5">
                 <h1 id="intro-title">Are you ready for some video game trivia?</h1>
@@ -44,7 +46,7 @@
                     Aim for a high score and a change on the leader board!
                 </p>
             </div>
-    </section>
+        </section>
         <!-- Main Game Container -->
         <section id="game-section" class="container-fluid common-styles collapse hide">
             <div id="hud" class="row">
@@ -65,27 +67,25 @@
                     </h2>
                 </div>
             </div>
-            <div class="row justify-content-sm-left">
-                <div id="question" class="col-sm-6 my-5 h1"></div>
-            </div>
-            <div class="row my-5 justify-content-sm-right">
-                <div class="option-container col-sm-5">
-                    <p class="option-prefix">A</p>
-                    <button class="btn btn-lg btn-block option-text" data-number="1" type="submit"></button>
+            <div class="row">
+                <div id="question" class="col-sm-5"></div>
+                    <div class="option-container col-sm-6">
+                        <p class="option-prefix">A</p>
+                        <button class="btn btn-lg btn-block option-text" data-number="1" type="submit"></button>
+                    </div>
+                    <div class="option-container col-sm-5">
+                        <p class="option-prefix">B</p>
+                        <button class="btn btn-lg btn-block option-text" data-number="2" type="submit"></button>
+                    </div>
+                    <div class="option-container col-sm-5">
+                        <p class="option-prefix">C</p>
+                        <button class="btn btn-lg btn-block option-text" data-number="3" type="submit"></button>
+                    </div>
+                    <div class="option-container col-sm-5">
+                        <p class="option-prefix">D</p>
+                        <button class="btn btn-lg btn-block option-text" data-number="4" type="submit"></button>
+                    </div>
                 </div>
-                <div class="option-container col-sm-5">
-                    <p class="option-prefix">B</p>
-                    <button class="btn btn-lg btn-block option-text" data-number="2" type="submit"></button>
-                </div>
-                <div class="option-container col-sm-5">
-                    <p class="option-prefix">C</p>
-                    <button class="btn btn-lg btn-block option-text" data-number="3" type="submit"></button>
-                </div>
-                <div class="option-container col-sm-5">
-                    <p class="option-prefix">D</p>
-                    <button class="btn btn-lg btn-block option-text" data-number="4" type="submit"></button>
-                </div>
-            </div>
             <div class="row mt-5">
                 <div class="offset-sm-8 justify-content-left">
                     <button class="HUD-btn btn" type="button" onClick="window.location.reload();">
@@ -120,13 +120,13 @@
                 </div>
             </div>
         </footer>
-    </div> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
-            integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-        <script src="assets/js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
