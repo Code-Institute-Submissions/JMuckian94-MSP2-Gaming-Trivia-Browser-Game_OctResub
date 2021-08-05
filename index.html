@@ -12,115 +12,114 @@
 </head>
 
 <body>
-    <div id="intro-background">
-        <section id="intro-section" class="container-fluid common-styles row collapse show">
-            <!--Introductory Div-->
-            <div class="col-sm-12 mb-5">
-                <h1 id="intro-title">Are you ready for some video game trivia?</h1>
+    <section id="intro-section" class="container-fluid common-styles row collapse show">
+        <!--Introductory Div-->
+        <div class="col-sm-12 mb-5">
+            <h1 id="intro-title">Are you ready for some video game trivia?</h1>
+        </div>
+        <!-- Button hides intro section and shows game -->
+        <div class="col-sm-12 col-md-6">
+            <button id="play-btn" class="HUD-btn btn btn-lg btn-block" data-toggle="collapse"
+                data-target="#intro-section, #game-section, #footer-section" aria-expanded="false"
+                aria-controls="intro-section">
+                Lets Play! <i class="fas fa-gamepad"></i>
+            </button>
+        </div>
+        <!-- Button hides intro section and highscores section -->
+        <div class="col-sm-12 col-md-6">
+            <button id="highscore-btn" class="HUD-btn btn btn-lg btn-block" type="button"
+                onclick="window.location.href='finalscore.html';">
+                High Scores! <i class="fas fa-star"></i>
+            </button>
+        </div>
+        <div class="col-sm-12 mb-5" id="tutorial">
+            <h2 class="mb-5">How to play <i class="far fa-question-circle"></i></h2>
+            <p>
+                You will be asked 20 questions related to video games and the gaming industry.
+                These questions will vary in difficulty, the easiest being true or false and the hardest being
+                multiple choice.
+            </p>
+            <p>
+                You will have 15 seconds to answer each question. A progress bar will keep tabs on your
+                progress.
+                Aim for a high score and a change on the leader board!
+            </p>
+        </div>
+    </section>
+    <!-- Main Game Container -->
+    <section id="game-section" class="container-fluid common-styles collapse hide">
+        <div id="hud" class="row">
+            <div id="progressBar" class="col-sm-12">
+                <div id="progressBarFull"></div>
             </div>
-            <!-- Button hides intro section and shows game -->
-            <div class="col-sm-12 col-md-6">
-                <button id="play-btn" class="HUD-btn btn btn-lg btn-block" data-toggle="collapse"
-                    data-target="#intro-section, #game-section, #footer-section" aria-expanded="false"
-                    aria-controls="intro-section">
-                    Lets Play! <i class="fas fa-gamepad"></i>
+            <div id="hud-item" class="col-sm-6">
+                <h2 id="progressText" class="hud-prefix">Question .../20</h2>
+            </div>
+            <div class="col-sm-2">
+                <h2 class="hud-prefix">
+                    Score
+                </h2>
+            </div>
+            <div class="col-sm-3">
+                <h2 class="hud-main-text" id="score">
+                    0
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div id="question" class="col-sm-12"></div>
+        </div>
+        <div class="row">
+            <div class="option-container col-sm-5">
+                <p class="option-prefix">A</p>
+                <button class="btn btn-lg btn-block option-text" data-number="1" type="submit"></button>
+            </div>
+            <div class="option-container col-sm-5">
+                <p class="option-prefix">B</p>
+                <button class="btn btn-lg btn-block option-text" data-number="2" type="submit"></button>
+            </div>
+            <div class="option-container col-sm-5">
+                <p class="option-prefix">C</p>
+                <button class="btn btn-lg btn-block option-text" data-number="3" type="submit"></button>
+            </div>
+            <div class="option-container col-sm-5">
+                <p class="option-prefix">D</p>
+                <button class="btn btn-lg btn-block option-text" data-number="4" type="submit"></button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="offset-sm-8 justify-content-left">
+                <button class="HUD-btn btn" type="button" onClick="window.location.reload();">
+                    Restart <i class="fas fa-redo"></i>
                 </button>
             </div>
-            <!-- Button hides intro section and highscores section -->
-            <div class="col-sm-12 col-md-6">
-                <button id="highscore-btn" class="HUD-btn btn btn-lg btn-block" type="button"
-                    onclick="window.location.href='finalscore.html';">
-                    High Scores! <i class="fas fa-star"></i>
-                </button>
+        </div>
+    </section>
+    <!-- SocialLinks -->
+    <footer id="footer-section" class="container-fluid common-styles collapse show">
+        <div class="row">
+            <div class="col-sm-12 friends-msg">
+                <h2>Challenge your friends!</h2>
             </div>
-            <div class="col-sm-12 mb-5" id="tutorial">
-                <h2 class="mb-5">How to play <i class="far fa-question-circle"></i></h2>
-                <p>
-                    You will be asked 20 questions related to video games and the gaming industry.
-                    These questions will vary in difficulty, the easiest being true or false and the hardest being
-                    multiple choice.
-                </p>
-                <p>
-                    You will have 15 seconds to answer each question. A progress bar will keep tabs on your
-                    progress.
-                    Aim for a high score and a change on the leader board!
-                </p>
+        </div>
+        <div id="social-network-links" class="row">
+            <div class="col-sm-3">
+                <a href="https://www.facebook.com" target="_blank" rel="nopener" aria-label="">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
             </div>
-        </section>
-        <!-- Main Game Container -->
-        <section id="game-section" class="container-fluid common-styles collapse hide">
-            <div id="hud" class="row">
-                <div id="progressBar" class="col-sm-12">
-                    <div id="progressBarFull"></div>
-                </div>
-                <div id="hud-item" class="col-sm-6">
-                    <h2 id="progressText" class="hud-prefix">Question .../20</h2>
-                </div>
-                <div class="col-sm-2">
-                    <h2 class="hud-prefix">
-                        Score
-                    </h2>
-                </div>
-                <div class="col-sm-3">
-                    <h2 class="hud-main-text" id="score">
-                        0
-                    </h2>
-                </div>
+            <div class="col-sm-3">
+                <a href="https://www.twitter.com" target="_blank" rel="nopener" aria-label="">
+                    <i class="fab fa-twitter-square"></i></a>
             </div>
-            <div class="row">
-                <div id="question" class="col-sm-5"></div>
-                    <div class="option-container col-sm-6">
-                        <p class="option-prefix">A</p>
-                        <button class="btn btn-lg btn-block option-text" data-number="1" type="submit"></button>
-                    </div>
-                    <div class="option-container col-sm-5">
-                        <p class="option-prefix">B</p>
-                        <button class="btn btn-lg btn-block option-text" data-number="2" type="submit"></button>
-                    </div>
-                    <div class="option-container col-sm-5">
-                        <p class="option-prefix">C</p>
-                        <button class="btn btn-lg btn-block option-text" data-number="3" type="submit"></button>
-                    </div>
-                    <div class="option-container col-sm-5">
-                        <p class="option-prefix">D</p>
-                        <button class="btn btn-lg btn-block option-text" data-number="4" type="submit"></button>
-                    </div>
-                </div>
-            <div class="row mt-5">
-                <div class="offset-sm-8 justify-content-left">
-                    <button class="HUD-btn btn" type="button" onClick="window.location.reload();">
-                        Restart <i class="fas fa-redo"></i>
-                    </button>
-                </div>
+            <div class="col-sm-3">
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" aria-label=""></i></a>
             </div>
-        </section>
-        <!-- SocialLinks -->
-        <footer id="footer-section" class="container-fluid common-styles collapse show">
-            <div class="row">
-                <div class="col-sm-12" id="friends">
-                    <h2>Challenge your friends!</h2>
-                </div>
+            <div class="col-sm-3">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-label=""></i></a>
             </div>
-            <div id="social-network-links" class="row">
-                <div class="col-sm-3">
-                    <a href="https://www.facebook.com" target="_blank" rel="nopener" aria-label="">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="https://www.twitter.com" target="_blank" rel="nopener" aria-label="">
-                        <i class="fab fa-twitter-square"></i></a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" aria-label=""></i></a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"
-                            aria-label=""></i></a>
-                </div>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
         integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
