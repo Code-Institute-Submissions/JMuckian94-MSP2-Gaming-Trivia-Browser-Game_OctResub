@@ -54,13 +54,13 @@ i {
 }
 
 .HUD-btn {
-    background-color: #4381C1;
+    background-color: #71B340;
     font-size: 4rem;
 }
 
 .option-container {
     font-size: 2rem;
-    background-color: #71B340;
+    background-color: #111111;
     margin: 2rem auto;
     border-radius: 1rem;
 }
@@ -69,6 +69,12 @@ i {
     font-size: 4rem;
     background-color: #4381C1;
 }
+
+.option-text:hover {
+    background-color: #0099ff;
+    transition: 1000ms;
+}
+
 #intro-background {
     background-image: url('/assets/img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg');
     background-size: cover;

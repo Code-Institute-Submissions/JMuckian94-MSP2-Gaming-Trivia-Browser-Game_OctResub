@@ -27,7 +27,7 @@
             <!-- Button hides intro section and highscores section -->
             <div class="col-sm-12 col-md-6">
                 <button id="highscore-btn" class="HUD-btn btn btn-lg btn-block" type="button"
-                    onclick="location.href='/finalscore.html';">
+                    onclick="window.location.href='finalscore.html';">
                     High Scores! <i class="fas fa-star"></i>
                 </button>
             </div>
@@ -65,29 +65,29 @@
                     </h2>
                 </div>
             </div>
-            <div class="row">
-                <div id="question" class="col-sm-12 my-5 h1"></div>
+            <div class="row justify-content-sm-left">
+                <div id="question" class="col-sm-6 my-5 h1"></div>
             </div>
-            <div class="row my-5">
-                <div class="option-container col-sm-12">
+            <div class="row my-5 justify-content-sm-right">
+                <div class="option-container col-sm-5">
                     <p class="option-prefix">A</p>
                     <button class="btn btn-lg btn-block option-text" data-number="1" type="submit"></button>
                 </div>
-                <div class="option-container col-sm-12">
+                <div class="option-container col-sm-5">
                     <p class="option-prefix">B</p>
                     <button class="btn btn-lg btn-block option-text" data-number="2" type="submit"></button>
                 </div>
-                <div class="option-container col-sm-12">
+                <div class="option-container col-sm-5">
                     <p class="option-prefix">C</p>
                     <button class="btn btn-lg btn-block option-text" data-number="3" type="submit"></button>
                 </div>
-                <div class="option-container col-sm-12">
+                <div class="option-container col-sm-5">
                     <p class="option-prefix">D</p>
                     <button class="btn btn-lg btn-block option-text" data-number="4" type="submit"></button>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="offset-sm-8">
+                <div class="offset-sm-8 justify-content-left">
                     <button class="HUD-btn btn" type="button" onClick="window.location.reload();">
                         Restart <i class="fas fa-redo"></i>
                     </button>
