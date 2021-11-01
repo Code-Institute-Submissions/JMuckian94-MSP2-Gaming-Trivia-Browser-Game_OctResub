@@ -1,10 +1,10 @@
-# Gaming Trivia
+# VGame Trivia
 
 ## Project Objective
 To create a browser based trivia game that challanges the users knowledge of video games, keeps record of the score, and is responsive on all media viewport widths. This game should be attractive to look at, easy to navigate, simple to control, and of course fun to play. The browser game will be built using HTML, CSS, and Javascript code. This project will also make use of the opentdb.com API and Bootstrap framework.
 
 ## Table of Contents
-- [Gaming Trivia](#gaming-trivia)
+- [VGame Trivia](#VGame-trivia)
   * [Project Objective](#project-objective)
   * [Table of Contents](#table-of-contents)
   * [UX](#ux)
@@ -102,7 +102,7 @@ I used the free icons available on [Font Awesome](https://fontawesome.com/icons?
 
 For colors I went for high contrast colors that provide the user clear signals as to how the game is progressing. I will elaborate on what colors are to be used where below.
 
-![Trivia Game Color Pallete](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/blob/master/wireframes/Gaming%20Trivia%20Color%20Pallete.png)
+![Trivia Game Color Pallete](https://github.com/JMuckian94/MSP2-VGame-Trivia-Browser-Game/blob/master/wireframes/VGame%20Trivia%20Color%20Pallete.png)
 
 - #111111 Rich Black: This charcoal color will be used for the background, allowing all visual elements to pop out
 - #4381C1 Steel Blue: This will be used as a highlight and background color for certain elements on the page
@@ -118,11 +118,11 @@ For adaptive structure on all screen widths I opted for Bootstrap layout control
 
 Here are the links to my wireframes:
 
-### [Desktop Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/desktop-wireframes)
+### [Desktop Wireframe Folder](https://github.com/JMuckian94/MSP2-VGame-Trivia-Browser-Game/tree/master/wireframes/desktop-wireframes)
 
-### [Tablet Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/tablet-wireframes)
+### [Tablet Wireframe Folder](https://github.com/JMuckian94/MSP2-VGame-Trivia-Browser-Game/tree/master/wireframes/tablet-wireframes)
 
-### [Mobile Wireframe Folder](https://github.com/JMuckian94/MSP2-Gaming-Trivia-Browser-Game/tree/master/wireframes/mobile-wireframes)
+### [Mobile Wireframe Folder](https://github.com/JMuckian94/MSP2-VGame-Trivia-Browser-Game/tree/master/wireframes/mobile-wireframes)
 
 ## Features
 

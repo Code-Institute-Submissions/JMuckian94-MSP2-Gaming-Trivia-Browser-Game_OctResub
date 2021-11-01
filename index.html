@@ -5,13 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming Trivia</title>
+    <title>VGame Trivia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+    <section>
+        <!-- Site navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">VGame Trivia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="finalscore.html">Final Scores</a>
+                </div>
+            </div>
+        </nav>
+    </section>
     <section id="intro-section" class="container-fluid common-styles row collapse show">
         <!--Introductory Div-->
         <div class="col-sm-12 mb-5">
@@ -35,7 +51,7 @@
         <div class="col-sm-12 mb-5" id="tutorial">
             <h2 class="mb-5">How to play <i class="far fa-question-circle"></i></h2>
             <p>
-                You will be asked 20 questions related to video games and the gaming industry.
+                You will be asked 20 questions related to video games and the VGame industry.
                 These questions will vary in difficulty, the easiest being true or false and the hardest being
                 multiple choice.
             </p>
@@ -89,9 +105,9 @@
         </div>
         <div class="row mt-5">
             <div class="offset-sm-8 justify-content-left">
-                <button class="HUD-btn btn" type="button" onClick="window.location.reload();">
-                    Restart <i class="fas fa-redo"></i>
-                </button>
+                <a class="HUD-btn btn" href="index.html" role="button">
+                    <h2>Restart <i class="fas fa-redo"></i></h2>
+                </a>
             </div>
         </div>
     </section>

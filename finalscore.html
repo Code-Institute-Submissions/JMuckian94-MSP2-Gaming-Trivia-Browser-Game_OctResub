@@ -12,6 +12,21 @@
 </head>
 
 <body>
+    <section>
+        <!-- Site navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">VGame Trivia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseBtn" aria-controls="navbarCollapseBtn" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapseBtn">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="finalscore.html">Final Scores</a>
+              </div>
+            </div>
+          </nav>
+    </section>
     <div id="highscore-container" class="container">
         <div class="row common-styles">
             <div class="col-sm-12 my-5">
@@ -25,15 +40,15 @@
                     </button>
                 </form>
             </div>
-                <button class="HUD-btn btn my-5" type="button" onclick="location.href='/index.html';">
-                    <h2>Play Again!</h2>
-                </button>
-            </div>
+            <a class="HUD-btn btn" href="index.html" role="button">
+                <h2>Play Again!</h2>
+            </a>
         </div>
+    </div>
     </div>
     <!-- SocialLinks -->
     <footer id="footer-section" class="container-fluid common-styles collapse show mt-5">
-        <div  class="row">
+        <div class="row">
             <div class="col-sm-12 friends-msg">
                 <h2>Challenge your friends!</h2>
             </div>
@@ -58,7 +73,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <script src="assets/js/finalscore.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 

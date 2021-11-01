@@ -52,6 +52,28 @@ i {
     margin: 1rem auto;
 }
 
+.navbar {
+    background-color: #111111;
+}
+
+.navbar-toggler i {
+    color: #438cff;
+}
+
+.navbar-brand{
+    font-size: 4rem;
+    color: #438cff;
+}
+
+.navbar-nav {
+    font-size: 3rem;
+}
+
+.nav-link{
+    margin-right: 5rem;
+    color: #438cff;
+}
+
 .common-styles {
     margin: 3rem auto;
     background-color: transparent;
@@ -61,6 +83,7 @@ i {
 .HUD-btn {
     background-color: #4381C1;
     font-size: 4rem;
+    border: 0.5rem solid #111111;
 }
 
 .option-container {
