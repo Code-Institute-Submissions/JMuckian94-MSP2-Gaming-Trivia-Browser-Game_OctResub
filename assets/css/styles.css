@@ -15,7 +15,7 @@ body {
     color: #fff;
     background-color: #111111;
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.6rem;
+    font-size: 2rem;
     background-image: url('/assets/img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg');
     background-size: cover;
     width: 100%;
@@ -44,6 +44,7 @@ i {
     margin-left: auto;
     margin-right: auto;
 }
+
 .collapsing {
     transition: 0ms;
 }
@@ -57,21 +58,22 @@ i {
 }
 
 .navbar-toggler i {
-    color: #438cff;
+    color: #4381C1;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 4rem;
-    color: #438cff;
+    color: #4381C1;
+    letter-spacing: -0.1rem;
 }
 
 .navbar-nav {
     font-size: 3rem;
 }
 
-.nav-link{
+.nav-link {
     margin-right: 5rem;
-    color: #438cff;
+    color: #4381C1;
 }
 
 .common-styles {
@@ -84,6 +86,7 @@ i {
     background-color: #4381C1;
     font-size: 4rem;
     border: 0.5rem solid #111111;
+    border-radius: 0.5rem;
 }
 
 .option-container {
@@ -126,7 +129,7 @@ i {
     padding: 2rem;
 }
 
-#tutorial{
+#tutorial {
     background-color: #111111;
     border-radius: 0.5rem;
     margin-top: 2rem;
