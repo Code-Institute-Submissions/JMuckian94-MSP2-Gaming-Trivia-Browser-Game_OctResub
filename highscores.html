@@ -12,27 +12,25 @@
 </head>
 
 <body>
-    <section>
-        <!-- Site navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">VGame Trivia</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseBtn"
-                aria-controls="navbarCollapseBtn" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapseBtn">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-link active" href="index.html">Home</a>
-                    <a class="nav-link" href="finalscore.html">Final Scores</a>
-                </div>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">VGame Trivia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseBtn"
+            aria-controls="navbarCollapseBtn" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapseBtn">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="finalscore.html">End Screen</a>
+                <a class="nav-link" href="highscores.html">High Scores</a>
             </div>
-        </nav>
-    </section>
+        </div>
+    </nav>
     <div id="highscore-container" class="container common-styles">
         <div class="row">
-            <div class="col-sm-12 my-5">
+            <div id="highScores" class="col-sm-12 my-5 scoreHighlight">
                 <h1 id="finalScore">High Scores</h1>
-                <ul id="highScoresList"></ul>
+                <ol id="highScoresList"></ol>
             </div>
         </div>
     </div>
@@ -71,6 +69,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <script src="assets/js/highscores.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 

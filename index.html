@@ -23,7 +23,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <a class="nav-link active" href="index.html">Home</a>
-                    <a class="nav-link" href="finalscore.html">Final Scores</a>
+                    <a class="nav-link" href="finalscore.html">End Screen</a>
+                    <a class="nav-link" href="highscores.html">High Scores</a>
                 </div>
             </div>
         </nav>
@@ -43,10 +44,9 @@
         </div>
         <!-- Button hides intro section and highscores section -->
         <div class="col-sm-12 col-md-6">
-            <button id="highscore-btn" class="HUD-btn btn btn-lg btn-block" type="button"
-                onclick="window.location.href='finalscore.html';">
+            <a href="highscores.html" id="highscore-btn" class="HUD-btn btn btn-lg btn-block">
                 High Scores! <i class="fas fa-star"></i>
-            </button>
+            </a>
         </div>
         <div class="col-sm-12 mb-5" id="tutorial">
             <h2 class="mb-5">How to play <i class="far fa-question-circle"></i></h2>
@@ -119,25 +119,27 @@
             </div>
         </div>
         <div id="social-network-links" class="row">
-            <div class="col-sm-3">
+            <div class="col-3">
                 <a href="https://www.facebook.com" target="_blank" rel="nopener" aria-label="">
                     <i class="fab fa-facebook-square"></i>
                 </a>
             </div>
-            <div class="col-sm-3">
+            <div class="col-3">
                 <a href="https://www.twitter.com" target="_blank" rel="nopener" aria-label="">
                     <i class="fab fa-twitter-square"></i></a>
             </div>
-            <div class="col-sm-3">
+            <div class="col-3">
                 <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" aria-label=""></i></a>
             </div>
-            <div class="col-sm-3">
+            <div class="col-3">
                 <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-label=""></i></a>
             </div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="assets/js/game.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
 </body>

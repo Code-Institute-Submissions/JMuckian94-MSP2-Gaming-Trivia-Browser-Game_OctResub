@@ -13,7 +13,7 @@ html {
 
 body {
     color: #fff;
-    background-color: #111111;
+    background-color: #111;
     font-family: 'Roboto Mono', monospace;
     font-size: 2rem;
     background-image: url('/assets/img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg');
@@ -25,14 +25,19 @@ body {
 
 h1 {
     font-size: 5rem;
+    line-height: 1.75;
 }
 
 h2 {
     font-size: 4rem;
 }
 
-p {
+h3 {
     font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
 }
 
 /* Removes black boxes from behind letters */
@@ -51,10 +56,11 @@ i {
 
 .btn {
     margin: 1rem auto;
+    color: #111;
 }
 
 .navbar {
-    background-color: #111111;
+    background-color: #111;
 }
 
 .navbar-toggler i {
@@ -78,20 +84,24 @@ i {
 
 .common-styles {
     margin: 3rem auto;
-    background-color: transparent;
     text-align: center;
+}
+
+.scoreHighlight {
+    background-color: #db222a;
+    border-radius: 1rem;
 }
 
 .HUD-btn {
     background-color: #4381C1;
     font-size: 4rem;
-    border: 0.5rem solid #111111;
+    border: 0.5rem solid #111;
     border-radius: 0.5rem;
 }
 
 .option-container {
     font-size: 2rem;
-    background-color: #111111;
+    background-color: #111;
     margin: 2rem auto;
     border-radius: 1rem;
 }
@@ -115,7 +125,7 @@ i {
 }
 
 .friends-msg {
-    background-color: #111111;
+    background-color: #111;
     border-radius: 0.5rem;
     margin-top: 2rem;
     padding: 2rem;
@@ -130,7 +140,7 @@ i {
 }
 
 #tutorial {
-    background-color: #111111;
+    background-color: #111;
     border-radius: 0.5rem;
     margin-top: 2rem;
     padding: 2rem;
@@ -175,7 +185,7 @@ i {
     text-align: center;
 }
 
-#save-btn {
+#saveScoreBtn {
     background-color: #71B340;
     padding-bottom: 0;
 }
@@ -187,5 +197,5 @@ i {
 }
 
 #highscore-container {
-    background-color: #111111;
+    background-color: #111;
 }
