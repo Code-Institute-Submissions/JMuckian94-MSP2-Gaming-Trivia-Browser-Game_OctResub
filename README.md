@@ -1,7 +1,7 @@
 # VGame Trivia
 
 ## Project Objective
-To create a browser based trivia game that challanges the users knowledge of video games, keeps record of the score, and is responsive on all media viewport widths. This game should be attractive to look at, easy to navigate, simple to control, and of course fun to play. The browser game will be built using HTML, CSS, and Javascript code. This project will also make use of the opentdb.com API and Bootstrap framework.
+To create a browser based trivia game that challanges the users knowledge of video games, keeps record of the score, and is responsive on all media viewport widths. This game should be attractive to look at, easy to navigate, simple to control, and challenging but fun to play. The browser game will be built using HTML, CSS, and Javascript code. This project will also make use of the opentdb.com API and Bootstrap framework.
 
 ## Table of Contents
 - [VGame Trivia](#VGame-trivia)
@@ -110,6 +110,8 @@ For colors I went for high contrast colors that provide the user clear signals a
 - #DB222A Amaranth Red: This will be used to signal when the user has answered incorrectly
 - #FFFFFF White: This will be used for all text elements on the page
 
+Some other colors not included where utilised to provide either highlight or contrast with the colors above.
+
 #### Structure
 
 For adaptive structure on all screen widths I opted for Bootstrap layout controls. This will keep all content in their respective rows and columns on the page. Positioning and sizing was based on the mobile first approach. The html will be assigned to a single page with the Javascript scripts showing and hiding the appropriate content once the user initiated the game or finishes it.
@@ -126,6 +128,10 @@ Here are the links to my wireframes:
 
 ## Features
 
+### Navbar
+
+The navbar is a simple bootstrap design with the website brand and the home buttons taking the user back to the starting page and two more buttons, one to take the user to the end screen, which is useful if the user accidentally returned to the home by mistake without finishing saving their score, and the high scores page link, which can be accessed also via a button on the home page. Each element has a hover transition.
+
 ### Intro Section
 
 The Intro Section is there to welcome the user and provide information on what kind of game they are playing and how it works. Users will be asked a series of 20 questions related to the video game industry. Each of these questions will have between 2 and 4 possible answers to choose from depending on the difficulty. Correct answers will be tallied by the scoreboard. Users are encouraged to aim for high scores and to share the game with friends via social links at the bottom. 
@@ -138,23 +144,20 @@ These buttons will control css operations to hide the intro section and show the
 
 The game section will fetch data from opentdb.com's database in order to populate the question and answer area. I have created js functions to randomise the answers for each question and opentdb keeps track of the number of questions answered. For the player, A progress bar and question counter will provide visual feedback to the user to see how many question are left. The players score will also appear in a counter in the HUD section. Each time the player answers a question it will move onto the next question and the HUD elements will update accordingly. Players also have the option to restart the game should they choose by clicking a button beneath the game answer area.
 
-### Final Scores Section
+### Final Scores Page
 
-Once the game concludes the player is brought to the end game page where they are notified of how many answers they got right. It then provides a form box for the player to enter a username. The "Save" button wont function until an input has been made into the form. The social media links and challenge statements also return to encourage users to share the game with friends.
+Once the game concludes the player is brought to the end game page where they are notified of h
+.ow many answers they got right. It then provides a form box for the player to enter a username. The "Save" button wont function until an input has been made into the form. The social media links and challenge statements also return to encourage users to share the game with friends.
+
+### High Scores Page
+
+After the user has saved their username, it will be paired with the score they recieved on their last attempt at the game. This section is programmed to only display the top 5 scores achieved. At this time, the game runs off local storage so it will display the top 5 scores from those who have played the game on the local system.
 
 ## Features to be Implemented
 
 ### Timer
 
 I want to limit the amount of time the user has to answer questions by implementing a timer set to 10 seconds. This will put pressure on the player but should enhance enjoyment levels by increasing the challenge.
-
-### Right / Wrong Feedback
-
-I want to have the option buttons change color to give the player feedback whether they got the right or wrong answer.
-
-### Different Final Score Responces
-
-I want to implement different messages to appear depending on how well the player did.
 
 ## Technologies Used
 
